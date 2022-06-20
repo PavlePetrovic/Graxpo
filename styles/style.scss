@@ -1,0 +1,154 @@
+@import "./fonts";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-block: 40px;
+    background-color: #e5e5e5;
+    transition: 0.7s;
+    z-index: 1;
+
+    // flex-direction: column;
+
+    #logoText{
+        font-family: 'Leckerli One', cursive;
+        margin-right: auto;
+        margin-left: 99px;
+        color: #e84c3d;
+        font-size: 37.33px;
+    }
+
+    nav{
+        margin-right: 99px;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            
+            li{
+                
+                a{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 18.66px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #333b46;
+                    padding-inline: 15px;
+                    &:hover{
+                        color: #e84c3d !important;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.headerSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+    height: 800px;
+    z-index: 0;
+
+    #headerImgHeadphones{
+        position: absolute;
+        top: 180px;
+        left: 0px;
+        width: 200px;
+    }
+
+    #headerImgSunglasses{
+        position: absolute;
+        top: 440px;
+        left: 175px;
+        width: 155px;
+    }
+
+    #headerImgPencil1{
+        position: absolute;
+        top: 622px;
+        left: 110px;
+    }
+
+    #headerImgPencil2{
+        position: absolute;
+        top: 590px;
+        left: 70px;
+    }
+
+    h1{
+        margin-top: 320px;
+        color: #333b46;
+        font-size: 46.66px;
+        letter-spacing: 3.5px;
+    }
+
+    h3{
+        color: #81868e;
+        font-size: 21.33px;
+        letter-spacing: 6px;
+        margin-right: 62px;
+        margin-top: 5px;
+    }
+
+    #headerImgCork{
+        position: absolute;     
+        top: 230px;   
+        right: 80px;
+        width: 95px;
+    }
+
+    #headerImgGlass{
+        position: absolute;
+        top: 215px;
+        right: 70px;
+        width: 86px;
+    }
+
+    #headerImgPenHolder{
+        position: absolute;
+        top: 400px;
+        right: 18px;
+        width: 130px;
+    }
+
+    #headerImgMouse{
+        position: absolute;
+        top: 550px;
+        right: 180px;
+        width: 75px;
+    }
+
+    #scrollDownIco{
+        margin-top: 250px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    p{
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 12px;
+        font-size: 14px;
+        color: #e84c3d;
+    }
+}
+
+.test{
+    height: 600px;
+    background-color: #cfcfcf;
+}
