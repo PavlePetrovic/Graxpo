@@ -1,3 +1,4 @@
+@import "./variables";
 @import "./fonts";
 
 *{
@@ -5,6 +6,8 @@
     padding: 0;
     margin: 0;
 }
+
+// Header section
 
 header{
     position: fixed;
@@ -14,16 +17,13 @@ header{
     align-items: center;
     padding-block: 40px;
     background-color: #e5e5e5;
-    transition: 0.7s;
     z-index: 1;
-
-    // flex-direction: column;
 
     #logoText{
         font-family: 'Leckerli One', cursive;
         margin-right: auto;
         margin-left: 99px;
-        color: #e84c3d;
+        color: $mainOrange;
         font-size: 37.33px;
     }
 
@@ -44,8 +44,9 @@ header{
                     color: #333b46;
                     padding-inline: 15px;
                     &:hover{
-                        color: #e84c3d !important;
+                        color: $mainOrange !important;
                         cursor: pointer;
+                        transition: 0.2s;
                     }
                 }
             }
@@ -144,7 +145,223 @@ header{
         font-family: 'Open Sans', sans-serif;
         margin-top: 12px;
         font-size: 14px;
-        color: #e84c3d;
+        color: $mainOrange;
+    }
+}
+
+// About section
+
+.aboutSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: #f3f3f3;
+    padding-block: 110px;
+   
+    .aboutSectionText{
+        width: 450px;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 18px;
+            color: $sectionTitleColor;
+            font-size: $sectionTitle; 
+            letter-spacing: $sectionTitleLetterSpacing;
+        }
+
+        hr{
+            @include hrLine;
+            margin-bottom: 40px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 40px;
+            color: $sectionTextColor;
+            font-size: $sectionText;
+        }
+
+        button{
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+            font-size: 15px;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 6px;
+            letter-spacing: 2px;
+            background-color: #e84c3d;
+            color: white;
+            &:hover{
+                background-color: #e5e5e5;
+                color: $mainOrange;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .aboutSectionImg{
+        
+        img{
+            width: 400px;
+        }
+    }
+}
+
+// What we do section
+
+.whatWeDoSection{
+    background-color: #f3f3f3;
+    padding-bottom: 100px;
+
+    .whatWeDoSectionHeader{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 35px;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: $sectionTitle;
+            color: $sectionTitleColor;
+            letter-spacing: $sectionTitleLetterSpacing;
+            margin-bottom: 18px;
+        }
+
+        hr{
+            width: 50px;
+            @include hrLine;
+            margin-bottom: 35px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: $sectionText;
+            color: $sectionTextColor;
+            width: 600px;
+            text-align: center;
+        }
+    }
+
+    .whatWeDoSectionCards{
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover{
+            cursor: pointer;
+        }
+
+        .whatWeDoSectionCardsRow{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 25px;
+            padding-block-start: 25px;
+
+            .clickedCard{
+                background-color: #e84c3d;
+                color: #ffffff !important;
+            }
+            .clickedCardImage{
+                background-color: #f3f3f3 !important;
+            }
+            
+            .card{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                border: 2px solid #ebebeb;
+                border-radius: 10px;
+                padding: 40px 25px;
+                gap: 20px;
+                color: $sectionTextColor;
+
+                .cardImage{
+                    height: 76px;
+                    background-color: $mainOrange;
+                    padding: 22px;
+                    border-radius: 50%;
+                    
+                    img{
+                        width: 35px;
+                    }
+                }
+
+                .cardText{
+
+                    h4{
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+                        font-size: 15px;
+                        margin-top: 12px;
+                        margin-bottom: 10px;
+                        letter-spacing: 1.5px;
+                    }
+
+                    .clickedSpan{
+                        background-color: #ffffff;
+                    }
+
+                    span{
+                        display: inline-block;
+                        height: 2.3px;
+                        width: 30px;
+                        margin-bottom: 15px;
+                        background-color: $sectionTextColor;
+                        border-radius: 2px; 
+                    }
+
+                    p{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Counter Section
+
+.counterSection{
+    background-image: url("../img/counterBack.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-family: 'Roboto', sans-serif;
+
+    .counterBox{
+        color: white;
+
+        i{
+            font-size: 40px;
+            padding-right: 10px;
+        }
+
+        .number{
+            font-size: 40px;
+            letter-spacing: 3px;
+            display: inline;
+        }
+
+        .text{
+            margin-top: 18px;
+            font-size: 16px;
+        }
+        
+        span{
+            display: inline-block;
+            margin-top: 20px;
+            background-color: white;
+            width: 40px;
+            border-radius: 5px;
+            height: 2.5px;
+        }
     }
 }
 

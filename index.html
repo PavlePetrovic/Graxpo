@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graxpo</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/a328b1d1bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -15,13 +17,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#" id="headerSection">Home</a>
+                    <a href="#header">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Service</a>
+                    <a href="#whatWeDo" >Service</a>
                 </li>
                 <li>
                     <a href="#">Portfolio</a>
@@ -39,7 +41,8 @@
         </nav>
     </header>
 
-    <section class="headerSection" id="headerSection">
+    <!-- Header section -->
+    <section class="headerSection" id="header">
 
         <img src="./img/headphones.png" id="headerImgHeadphones" alt="headphones">
         <img src="./img/sunglasses.png" id="headerImgSunglasses"  alt="sunglases">
@@ -62,9 +65,111 @@
         <!-- -->
 
     </section>
+    <!--  -->
+
+    <!-- About section -->
+    <section class="aboutSection" id="about">
+        <div class="aboutSectionText">
+            <h3>ABOUT GRAXPO</h3>
+            <hr>
+            <p>In gnissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+            <button>LEARN MORE !</button>
+        </div>
+        <div class="aboutSectionImg">
+            <img src="./img/about.png" alt="aboutImg">
+        </div>
+    </section>
+    <!--  -->
+
+    <!-- What we do section -->
+    <section class="whatWeDoSection" id="whatWeDo">
+        <div class="whatWeDoSectionHeader">
+            <h3>WHAT WE DO</h3>
+            <hr>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                been the industry's standard dummy text </p>
+        </div>
+        <div class="whatWeDoSectionCards">
+            <div class="whatWeDoSectionCardsRow">
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="./img/computerWhite.png" alt="ico">
+                    </div>
+                    <div class="cardText">
+                        <h4>UI / UX DESIGN</h4>
+                        <span></span>
+                        <p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="./img/computerWhite.png" alt="ico">
+                    </div>
+                    <div class="cardText">
+                        <h4>BRANDING & IDENTY</h4>
+                        <span></span>
+                        <p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="whatWeDoSectionCardsRow">
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="./img/computerWhite.png" alt="ico">
+                    </div>
+                    <div class="cardText">
+                        <h4>APP DESIGN</h4>
+                        <span></span>
+                        <p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="./img/computerWhite.png" alt="ico">
+                    </div>
+                    <div class="cardText">
+                        <h4>PRINT DESIGN</h4>
+                        <span></span>
+                        <p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!-- Counter section -->
+    <section class="counterSection">
+        <div class="counterBox">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <p class="number" id="number1">1202</p>
+            <p class="text">PROJECT COMPLETED</p>
+            <span></span>
+        </div>
+        <div class="counterBox">
+            <i class="fa-regular fa-heart"></i>
+            <p class="number" id="number2">1202</p>
+            <p class="text">PEOPLE LOVED</p>
+            <span></span>
+        </div>
+        <div class="counterBox">
+            <i class="fa-regular fa-star"></i>
+            <p class="number" id="number3">1202</p>
+            <p class="text">IDENTIFY EARN</p>
+            <span></span>
+        </div>
+        <div class="counterBox">
+            <i class="fa-solid fa-bullseye"></i>
+            <p class="number" id="number4">1202</p>
+            <p class="text">BUSINES DONOR</p>
+            <span></span>
+        </div>
+    </section>
+    <!--  -->
 
     <div class="test"></div>
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="./counterJs/dist/countUp.min.js" type="module"></script>
 </body>
 </html>

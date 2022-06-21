@@ -1,0 +1,13 @@
+$mainOrange: #e84c3d;
+$sectionTitle: 25px;
+$sectionTitleColor: #333b46;
+$sectionTitleLetterSpacing: 4px;
+$sectionText: 15.4px;
+$sectionTextColor: #81868e;
+
+@mixin hrLine {
+    width: 50px;
+    height: 3px;
+    background-color: #898989;
+    border-radius: 2px;
+}

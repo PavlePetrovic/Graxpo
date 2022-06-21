@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,8 +20,6 @@ header {
           align-items: center;
   padding-block: 40px;
   background-color: #e5e5e5;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   z-index: 1;
 }
 
@@ -56,6 +54,8 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #e84c3d !important;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .headerSection {
@@ -158,6 +158,254 @@ header nav ul li a:hover {
   margin-top: 12px;
   font-size: 14px;
   color: #e84c3d;
+}
+
+.aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
+  background-color: #f3f3f3;
+  padding-block: 110px;
+}
+
+.aboutSection .aboutSectionText {
+  width: 450px;
+}
+
+.aboutSection .aboutSectionText h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 18px;
+  color: #333b46;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+.aboutSection .aboutSectionText hr {
+  width: 50px;
+  height: 3px;
+  background-color: #898989;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+.aboutSection .aboutSectionText p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 40px;
+  color: #81868e;
+  font-size: 15.4px;
+}
+
+.aboutSection .aboutSectionText button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  background-color: #e84c3d;
+  color: white;
+}
+
+.aboutSection .aboutSectionText button:hover {
+  background-color: #e5e5e5;
+  color: #e84c3d;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.aboutSection .aboutSectionImg img {
+  width: 400px;
+}
+
+.whatWeDoSection {
+  background-color: #f3f3f3;
+  padding-bottom: 100px;
+}
+
+.whatWeDoSection .whatWeDoSectionHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.whatWeDoSection .whatWeDoSectionHeader h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #333b46;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.whatWeDoSection .whatWeDoSectionHeader hr {
+  width: 50px;
+  width: 50px;
+  height: 3px;
+  background-color: #898989;
+  border-radius: 2px;
+  margin-bottom: 35px;
+}
+
+.whatWeDoSection .whatWeDoSectionHeader p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15.4px;
+  color: #81868e;
+  width: 600px;
+  text-align: center;
+}
+
+.whatWeDoSection .whatWeDoSectionCards {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whatWeDoSection .whatWeDoSectionCards:hover {
+  cursor: pointer;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  -webkit-padding-before: 25px;
+          padding-block-start: 25px;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .clickedCard {
+  background-color: #e84c3d;
+  color: #ffffff !important;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .clickedCardImage {
+  background-color: #f3f3f3 !important;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  padding: 40px 25px;
+  gap: 20px;
+  color: #81868e;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage {
+  height: 76px;
+  background-color: #e84c3d;
+  padding: 22px;
+  border-radius: 50%;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage img {
+  width: 35px;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText .clickedSpan {
+  background-color: #ffffff;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText span {
+  display: inline-block;
+  height: 2.3px;
+  width: 30px;
+  margin-bottom: 15px;
+  background-color: #81868e;
+  border-radius: 2px;
+}
+
+.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.counterSection {
+  background-image: url("../img/counterBack.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.counterSection .counterBox {
+  color: white;
+}
+
+.counterSection .counterBox i {
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.counterSection .counterBox .number {
+  font-size: 40px;
+  letter-spacing: 3px;
+  display: inline;
+}
+
+.counterSection .counterBox .text {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.counterSection .counterBox span {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: white;
+  width: 40px;
+  border-radius: 5px;
+  height: 2.5px;
 }
 
 .test {
