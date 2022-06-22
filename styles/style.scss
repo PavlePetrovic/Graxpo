@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+body{
+    background-color: #ececec;
+}
+
 // Header section
 
 header{
@@ -52,6 +56,12 @@ header{
             }
         }
     }
+    
+    .mobileMenuItems{
+        display: none;
+    }
+  
+
 }
 
 .headerSection{
@@ -365,7 +375,187 @@ header{
     }
 }
 
+// Three simple steps section
+
+.simpleStepsSection{
+    background-color: #f3f3f3;
+
+    .simpleStepsSectionHeaderText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 90px;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: $sectionTitle;
+            color: $sectionTitleColor;
+            letter-spacing: $sectionTitleLetterSpacing;
+            margin-bottom: 18px;
+        }
+
+        hr{
+            width: 50px;
+            @include hrLine;
+            margin-bottom: 35px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: $sectionText;
+            color: $sectionTextColor;
+            width: 600px;
+            text-align: center;
+        }
+    }
+
+    .simpleStepsSectionImgsDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 110px;
+        }
+
+        .stepIcoLine{
+            display: inline-block;
+            height: 3px;
+            width: 300px;
+            background-color: #ebebeb;
+        }
+    }
+
+    .simpleStepsSectionDescriptionDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        margin-top: 40px;
+        padding-bottom: 90px;
+
+        .simpleStepsSectionDescriptionText{
+            text-align: center;
+            width: 340px;
+            color: #333b46;
+
+            h3{
+                font-family: 'Roboto', sans-serif;
+                color: $sectionTitleColor;
+                letter-spacing: 2px;
+            }
+
+            p{
+                font-family: 'Open Sans', sans-serif;
+                color: $sectionTextColor;
+                letter-spacing: 0.5px;
+                font-size: 15px;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+// Featured work section
+
+.featuredWorkSection{
+    background-color: #ececec;
+
+    .featuredWorkSectionText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 100px;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: $sectionTitle;
+            color: $sectionTitleColor;
+            letter-spacing: $sectionTitleLetterSpacing;
+            margin-bottom: 18px;
+        }
+
+        hr{
+            width: 50px;
+            @include hrLine;
+            margin-bottom: 35px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: $sectionText;
+            color: $sectionTextColor;
+            width: 600px;
+            text-align: center;
+        }
+    }
+}
+
+// Featured work images section
+
+.featuredWorkImagesSection{
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ececec;
+
+    .featuredWorkImagesDiv{
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 100%;
+            height: auto;
+            &:hover{
+                opacity: 0.5;
+                transition: 0.2s;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Best service section
+
+.bestServiceSection{
+    background-color: #ececec;
+
+    .bestServiceSectionText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 100px;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: $sectionTitle;
+            color: $sectionTitleColor;
+            letter-spacing: $sectionTitleLetterSpacing;
+            margin-bottom: 18px;
+        }
+
+        hr{
+            width: 50px;
+            @include hrLine;
+            margin-bottom: 35px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: $sectionText;
+            color: $sectionTextColor;
+            width: 600px;
+            text-align: center;
+        }
+    }
+}
+
 .test{
     height: 600px;
     background-color: #cfcfcf;
 }
+
+// MEDIA QUERIES
+@import "./media1100.scss";
+@import "./media900.scss";
+@import "./media550.scss";

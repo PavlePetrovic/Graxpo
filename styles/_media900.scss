@@ -1,0 +1,186 @@
+@import "./variables";
+@import "./fonts";
+@media only screen and (max-width: 900px) {
+
+    .stopScroll{
+        overflow: hidden;
+    }
+
+    header{
+        #logoText{
+            font-size: 34px;
+        }
+        nav{
+            display: none;
+        }
+        .mobileMenuDiv{
+            z-index: 3;
+            margin-right: 50px;
+            &:hover{
+                cursor: pointer;
+            }
+            .menuIcon{
+                width: 28px;
+                height: 2px;
+                background-color: $mainOrange;
+                margin: 5px 0px;
+                border-radius: 10px;
+                transition: 0.4s;
+            }
+            .bar1.open{
+                width: 20px;
+                transform: rotate(405deg);
+                margin: 0px;
+            }
+            .bar2.open{
+                transform: translateX(-20px);
+                // background: transparent;
+            }
+            .bar3.open{
+                width: 20px;
+                transform: rotate(-405deg); 
+                margin: 0px;
+            }
+        }
+        .mobileMenuItems{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0; /* Stay at the top */
+            right: 0;
+            z-index: 2;
+            background-color: #333b46;
+            overflow: hidden;
+            transition: 0.4s;
+            a{
+                font-family: 'Open Sans', sans-serif;
+                padding-block: 12px;
+                text-align: right;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $mainOrange;
+                display: block;
+                transition: 0.3s;
+            }
+        }
+        .mobileMenuItems.open{
+            width: 100%;
+            background-color: #333b46fc;
+        }
+    }
+
+    .headerSection{
+        #headerImgHeadphones{
+            top: 140px;
+            width: 120px;
+        }
+        #headerImgSunglasses{
+            top: 430px;
+            left: 80px;
+            width: 90px;
+        }
+        #headerImgPencil1{
+            top: 565px;
+            left: 52px;
+            width: 75px;
+        }
+        #headerImgPencil2{
+            top: 550px;
+            left: 30px;
+            width: 100px;
+        }
+        h1{
+            font-size: 32px;
+            letter-spacing: 3px;
+        }
+        h3{
+            font-size: 14px;
+            letter-spacing: 5px;
+            margin-right: 37px;
+        }
+        #headerImgCork{
+            right: 50px;
+            width: 60px;
+        }
+        #headerImgGlass{
+            top: 220px;
+            right: 42px;
+            width: 53px;
+        }
+        #headerImgPenHolder{
+            right: 15px;
+            width: 70px;
+        }
+        #headerImgMouse{
+            top: 500px;
+            right: 130px;
+            width: 45px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+
+    .aboutSection{
+        flex-direction: column;
+        padding-block: 80px;
+        .aboutSectionText{
+            text-align: center;
+            hr{
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        .aboutSectionImg{
+            img{
+                width: 390px;
+            }
+        }
+    }
+
+    .whatWeDoSection{
+        padding-bottom: 70px;
+        .whatWeDoSectionHeader{
+            p{
+                width: 450px;
+                font-size: 14.4px;
+            }
+        }
+        .whatWeDoSectionCards{
+            width: 430px;
+            .whatWeDoSectionCardsRow{
+                flex-direction: column;
+                .card{
+                    padding: 35px 25px;
+                }
+            }
+        }
+    }
+    
+    .counterSection{
+        height: 250px;
+        gap: 25px;
+        .counterBox{
+            i{
+                font-size: 22px;
+            }
+            .number{
+                font-size: 22px;
+            }
+            .text{
+                margin-top: 12px;
+                font-size: 11px;
+            }
+            span{
+                margin-top: 15px;
+            }
+        }
+    }
+
+}

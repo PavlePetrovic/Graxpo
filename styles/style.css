@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: #ececec;
 }
 
 header {
@@ -56,6 +63,10 @@ header nav ul li a:hover {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+header .mobileMenuItems {
+  display: none;
 }
 
 .headerSection {
@@ -408,8 +419,661 @@ header nav ul li a:hover {
   height: 2.5px;
 }
 
+.simpleStepsSection {
+  background-color: #f3f3f3;
+}
+
+.simpleStepsSection .simpleStepsSectionHeaderText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 90px;
+}
+
+.simpleStepsSection .simpleStepsSectionHeaderText h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #333b46;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.simpleStepsSection .simpleStepsSectionHeaderText hr {
+  width: 50px;
+  width: 50px;
+  height: 3px;
+  background-color: #898989;
+  border-radius: 2px;
+  margin-bottom: 35px;
+}
+
+.simpleStepsSection .simpleStepsSectionHeaderText p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15.4px;
+  color: #81868e;
+  width: 600px;
+  text-align: center;
+}
+
+.simpleStepsSection .simpleStepsSectionImgsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.simpleStepsSection .simpleStepsSectionImgsDiv img {
+  width: 110px;
+}
+
+.simpleStepsSection .simpleStepsSectionImgsDiv .stepIcoLine {
+  display: inline-block;
+  height: 3px;
+  width: 300px;
+  background-color: #ebebeb;
+}
+
+.simpleStepsSection .simpleStepsSectionDescriptionDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+  margin-top: 40px;
+  padding-bottom: 90px;
+}
+
+.simpleStepsSection .simpleStepsSectionDescriptionDiv .simpleStepsSectionDescriptionText {
+  text-align: center;
+  width: 340px;
+  color: #333b46;
+}
+
+.simpleStepsSection .simpleStepsSectionDescriptionDiv .simpleStepsSectionDescriptionText h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #333b46;
+  letter-spacing: 2px;
+}
+
+.simpleStepsSection .simpleStepsSectionDescriptionDiv .simpleStepsSectionDescriptionText p {
+  font-family: 'Open Sans', sans-serif;
+  color: #81868e;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.featuredWorkSection {
+  background-color: #ececec;
+}
+
+.featuredWorkSection .featuredWorkSectionText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 100px;
+}
+
+.featuredWorkSection .featuredWorkSectionText h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #333b46;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.featuredWorkSection .featuredWorkSectionText hr {
+  width: 50px;
+  width: 50px;
+  height: 3px;
+  background-color: #898989;
+  border-radius: 2px;
+  margin-bottom: 35px;
+}
+
+.featuredWorkSection .featuredWorkSectionText p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15.4px;
+  color: #81868e;
+  width: 600px;
+  text-align: center;
+}
+
+.featuredWorkImagesSection {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ececec;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDiv img {
+  width: 100%;
+  height: auto;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDiv img:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.bestServiceSection {
+  background-color: #ececec;
+}
+
+.bestServiceSection .bestServiceSectionText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 100px;
+}
+
+.bestServiceSection .bestServiceSectionText h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #333b46;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.bestServiceSection .bestServiceSectionText hr {
+  width: 50px;
+  width: 50px;
+  height: 3px;
+  background-color: #898989;
+  border-radius: 2px;
+  margin-bottom: 35px;
+}
+
+.bestServiceSection .bestServiceSectionText p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15.4px;
+  color: #81868e;
+  width: 600px;
+  text-align: center;
+}
+
 .test {
   height: 600px;
   background-color: #cfcfcf;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding-block: 35px;
+  }
+  header #logoText {
+    margin-left: 60px;
+  }
+  header nav {
+    margin-right: 50px;
+  }
+  header nav ul li a {
+    font-size: 15.66px;
+    padding-inline: 12px;
+  }
+  .headerSection {
+    height: 780px;
+  }
+  .headerSection #headerImgHeadphones {
+    top: 140px;
+    width: 150px;
+  }
+  .headerSection #headerImgSunglasses {
+    left: 80px;
+    width: 120px;
+  }
+  .headerSection #headerImgPencil1 {
+    top: 610px;
+    left: 42px;
+    width: 100px;
+  }
+  .headerSection #headerImgPencil2 {
+    left: 20px;
+    width: 120px;
+  }
+  .headerSection h1 {
+    font-size: 39.66px;
+    letter-spacing: 3.5px;
+  }
+  .headerSection h3 {
+    font-size: 18px;
+    letter-spacing: 6px;
+    margin-right: 36px;
+  }
+  .headerSection #headerImgCork {
+    right: 50px;
+    width: 75px;
+  }
+  .headerSection #headerImgGlass {
+    right: 40px;
+    width: 68px;
+  }
+  .headerSection #headerImgPenHolder {
+    right: 15px;
+    width: 90px;
+  }
+  .headerSection #headerImgMouse {
+    top: 540px;
+    right: 160px;
+    width: 55px;
+  }
+  .headerSection #scrollDownIco {
+    margin-top: 270px;
+    width: 20px;
+  }
+  .headerSection p {
+    font-size: 12px;
+  }
+  .aboutSection {
+    gap: 40px;
+  }
+  .aboutSection .aboutSectionText {
+    width: 400px;
+  }
+  .aboutSection .aboutSectionText p {
+    font-size: 14.4px;
+  }
+  .aboutSection .aboutSectionImg img {
+    width: 360px;
+  }
+  .whatWeDoSection .whatWeDoSectionHeader p {
+    width: 550px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards {
+    width: 840px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+    gap: 15px;
+    -webkit-padding-before: 15px;
+            padding-block-start: 15px;
+  }
+  .counterSection {
+    height: 330px;
+    gap: 60px;
+  }
+  .counterSection .counterBox i {
+    font-size: 33px;
+  }
+  .counterSection .counterBox .number {
+    font-size: 32px;
+  }
+  .counterSection .counterBox .text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .stopScroll {
+    overflow: hidden;
+  }
+  header #logoText {
+    font-size: 34px;
+  }
+  header nav {
+    display: none;
+  }
+  header .mobileMenuDiv {
+    z-index: 3;
+    margin-right: 50px;
+  }
+  header .mobileMenuDiv:hover {
+    cursor: pointer;
+  }
+  header .mobileMenuDiv .menuIcon {
+    width: 28px;
+    height: 2px;
+    background-color: #e84c3d;
+    margin: 5px 0px;
+    border-radius: 10px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .mobileMenuDiv .bar1.open {
+    width: 20px;
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+    margin: 0px;
+  }
+  header .mobileMenuDiv .bar2.open {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  header .mobileMenuDiv .bar3.open {
+    width: 20px;
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg);
+    margin: 0px;
+  }
+  header .mobileMenuItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    z-index: 2;
+    background-color: #333b46;
+    overflow: hidden;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .mobileMenuItems a {
+    font-family: 'Open Sans', sans-serif;
+    padding-block: 12px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e84c3d;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .mobileMenuItems.open {
+    width: 100%;
+    background-color: #333b46fc;
+  }
+  .headerSection #headerImgHeadphones {
+    top: 140px;
+    width: 120px;
+  }
+  .headerSection #headerImgSunglasses {
+    top: 430px;
+    left: 80px;
+    width: 90px;
+  }
+  .headerSection #headerImgPencil1 {
+    top: 565px;
+    left: 52px;
+    width: 75px;
+  }
+  .headerSection #headerImgPencil2 {
+    top: 550px;
+    left: 30px;
+    width: 100px;
+  }
+  .headerSection h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+  .headerSection h3 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-right: 37px;
+  }
+  .headerSection #headerImgCork {
+    right: 50px;
+    width: 60px;
+  }
+  .headerSection #headerImgGlass {
+    top: 220px;
+    right: 42px;
+    width: 53px;
+  }
+  .headerSection #headerImgPenHolder {
+    right: 15px;
+    width: 70px;
+  }
+  .headerSection #headerImgMouse {
+    top: 500px;
+    right: 130px;
+    width: 45px;
+  }
+  .headerSection p {
+    font-size: 12px;
+  }
+  .aboutSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-block: 80px;
+  }
+  .aboutSection .aboutSectionText {
+    text-align: center;
+  }
+  .aboutSection .aboutSectionText hr {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .aboutSection .aboutSectionImg img {
+    width: 390px;
+  }
+  .whatWeDoSection {
+    padding-bottom: 70px;
+  }
+  .whatWeDoSection .whatWeDoSectionHeader p {
+    width: 450px;
+    font-size: 14.4px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards {
+    width: 430px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card {
+    padding: 35px 25px;
+  }
+  .counterSection {
+    height: 250px;
+    gap: 25px;
+  }
+  .counterSection .counterBox i {
+    font-size: 22px;
+  }
+  .counterSection .counterBox .number {
+    font-size: 22px;
+  }
+  .counterSection .counterBox .text {
+    margin-top: 12px;
+    font-size: 11px;
+  }
+  .counterSection .counterBox span {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    padding-block: 25px;
+  }
+  header #logoText {
+    font-size: 28px;
+    margin-left: 40px;
+  }
+  header .mobileMenu {
+    margin-right: 40px;
+  }
+  .headerSection {
+    height: 600px;
+  }
+  .headerSection #headerImgHeadphones {
+    top: 100px;
+    width: 90px;
+  }
+  .headerSection #headerImgSunglasses {
+    top: 360px;
+    left: 40px;
+    width: 70px;
+  }
+  .headerSection #headerImgPencil1 {
+    top: 455px;
+    left: 32px;
+    width: 45px;
+  }
+  .headerSection #headerImgPencil2 {
+    top: 445px;
+    left: 20px;
+    width: 55px;
+  }
+  .headerSection h1 {
+    margin-top: 230px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .headerSection h3 {
+    font-size: 12px;
+    text-align: center;
+    margin-right: 0;
+  }
+  .headerSection #headerImgCork {
+    top: 150px;
+    right: 50px;
+    width: 40px;
+  }
+  .headerSection #headerImgGlass {
+    top: 145px;
+    right: 42px;
+    width: 38px;
+  }
+  .headerSection #headerImgPenHolder {
+    top: 330px;
+    right: 15px;
+    width: 50px;
+  }
+  .headerSection #headerImgMouse {
+    top: 400px;
+    right: 90px;
+    width: 30px;
+  }
+  .headerSection #scrollDownIco {
+    margin-top: 170px;
+    width: 17px;
+  }
+  .headerSection p {
+    font-size: 9px;
+  }
+  .aboutSection {
+    padding-block: 50px;
+  }
+  .aboutSection .aboutSectionText {
+    width: 300px;
+  }
+  .aboutSection .aboutSectionText h3 {
+    font-size: 22.4px;
+  }
+  .aboutSection .aboutSectionText p {
+    font-size: 12.5px;
+  }
+  .aboutSection .aboutSectionText button {
+    font-size: 13px;
+    padding: 10px 13px;
+  }
+  .aboutSection .aboutSectionImg {
+    padding-inline: 30px;
+  }
+  .aboutSection .aboutSectionImg img {
+    width: 100%;
+    height: auto;
+  }
+  .whatWeDoSection {
+    padding-bottom: 65px;
+  }
+  .whatWeDoSection .whatWeDoSectionHeader h3 {
+    font-size: 22.4px;
+  }
+  .whatWeDoSection .whatWeDoSectionHeader p {
+    width: 300px;
+    font-size: 12.5px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards {
+    width: 300px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+    -webkit-padding-before: 20px;
+            padding-block-start: 20px;
+    gap: 20px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage {
+    height: 52px;
+    padding: 15px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage img {
+    width: 25px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText h4 {
+    font-size: 13.5px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText span {
+    height: 2px;
+  }
+  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText p {
+    font-size: 10.5px;
+  }
+  .counterSection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    gap: 0px;
+    height: 250px;
+    padding-block: 30px;
+  }
+  .counterSection .counterBox {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,11 @@
 // Importujemo biblioteku - Animacija brojeva
 import { CountUp } from './counterJs/dist/countUp.min.js';
 
-//                      DOM
+/*                     DOM                  */
+// Mobile menu
+let body = document.querySelector('body')
+let hamburgerIcon = document.querySelector('.mobileMenuDiv')
+let mobileMenuItems = document.querySelector('.mobileMenuItems')
 // Card section
 let cardSection = document.querySelector('.whatWeDoSectionCards')
 let cardBox = document.querySelectorAll('.card')
@@ -9,32 +13,65 @@ let cardBox = document.querySelectorAll('.card')
 let num1 = document.getElementById('number1')
 let num2 = document.getElementById('number2')
 let num3 = document.getElementById('number3')
-let num4 = document.getElementById('number4')
+let num4 = document.getElementById('number4') 
 
+/*                  MOBILE MENU                 */
+// Hamburger icon
+hamburgerIcon.addEventListener('click', () => {
+    body.classList.toggle('stopScroll')
+    mobileMenuItems.classList.toggle('open')
+    
+    for(let i = 0; i < 3; i++){
+        hamburgerIcon.children[i].classList.toggle('open')
+    }
+})
+// Hamburger menu items
+mobileMenuItems.addEventListener('click', () => {
+    body.classList.toggle('stopScroll')
+    mobileMenuItems.classList.toggle('open')
+
+    for(let i = 0; i < 3; i++){
+        hamburgerIcon.children[i].classList.toggle('open')
+    }
+})
+
+/*                   CARD SECTION                  */
 cardBox.forEach( card => {
-    let clicked = false
-    // Work in progress
-    card.addEventListener('click', e => {
-        if(clicked === true){
+
+    card.addEventListener('click', function(){
+
+        let card1 = this.parentElement.parentElement.children[0].children[0]
+        let card2 = this.parentElement.parentElement.children[0].children[1]
+        let card3 = this.parentElement.parentElement.children[1].children[0]
+        let card4 = this.parentElement.parentElement.children[1].children[1]
+
+        let allCards = [card1, card2, card3, card4]
+
+        allCards.forEach(card => {
             // Kartica
             card.classList.remove('clickedCard')
             // Div u kome je slicica kartice
-            card.childNodes[1].classList.remove('clickedCardImage')
+            card.children[0].classList.remove('clickedCardImage')
             // Span element - Linija
-            card.childNodes[3].childNodes[3].classList.remove('clickedSpan')
+            card.children[1].children[1].classList.remove('clickedSpan')
             // Slicica u kartici - putanja
-            card.childNodes[1].childNodes[1].src = "./img/computerWhite.png"
-            clicked = false
-        } else{
-            card.classList.add('clickedCard')
-            card.childNodes[1].classList.add('clickedCardImage')
-            card.childNodes[3].childNodes[3].classList.add('clickedSpan')
-            card.childNodes[1].childNodes[1].src = "./img/computerOrange.png"
-            clicked = true
-        }
+            card.children[0].children[0].setAttribute('src', './img/computerWhite.png')
+        })
+
+        let clickedCard = card
+        allCards.forEach(card => {
+            if(clickedCard === card){
+                 card.classList.toggle('clickedCard')
+                card.children[0].classList.toggle('clickedCardImage')
+                card.children[1].children[1].classList.toggle('clickedSpan')
+                card.children[0].children[0].setAttribute('src', './img/computerOrange.png')
+            }
+        })
+
     })
 } )
 
+/*                  COUNTER SECTION                 */
 // Animacija brojeva ispod "What we do" sekcije
 function counter(num) {
     if(num == num1){
