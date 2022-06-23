@@ -30,7 +30,7 @@ header {
   z-index: 1;
 }
 
-header #logoText {
+header #logo-text {
   font-family: 'Leckerli One', cursive;
   margin-right: auto;
   margin-left: 99px;
@@ -65,11 +65,11 @@ header nav ul li a:hover {
   transition: 0.2s;
 }
 
-header .mobileMenuItems {
+header .mobile-menu-items {
   display: none;
 }
 
-.headerSection {
+.header-section {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,40 +87,40 @@ header .mobileMenuItems {
   z-index: 0;
 }
 
-.headerSection #headerImgHeadphones {
+.header-section #header-img-headphones {
   position: absolute;
   top: 180px;
   left: 0px;
   width: 200px;
 }
 
-.headerSection #headerImgSunglasses {
+.header-section #header-img-sunglasses {
   position: absolute;
   top: 440px;
   left: 175px;
   width: 155px;
 }
 
-.headerSection #headerImgPencil1 {
+.header-section #header-img-pencil1 {
   position: absolute;
   top: 622px;
   left: 110px;
 }
 
-.headerSection #headerImgPencil2 {
+.header-section #header-img-pencil-2 {
   position: absolute;
   top: 590px;
   left: 70px;
 }
 
-.headerSection h1 {
+.header-section h1 {
   margin-top: 320px;
   color: #333b46;
   font-size: 46.66px;
   letter-spacing: 3.5px;
 }
 
-.headerSection h3 {
+.header-section h3 {
   color: #81868e;
   font-size: 21.33px;
   letter-spacing: 6px;
@@ -128,50 +128,50 @@ header .mobileMenuItems {
   margin-top: 5px;
 }
 
-.headerSection #headerImgCork {
+.header-section #header-img-cork {
   position: absolute;
   top: 230px;
   right: 80px;
   width: 95px;
 }
 
-.headerSection #headerImgGlass {
+.header-section #header-img-glass {
   position: absolute;
   top: 215px;
   right: 70px;
   width: 86px;
 }
 
-.headerSection #headerImgPenHolder {
+.header-section #header-img-pen-holder {
   position: absolute;
   top: 400px;
   right: 18px;
   width: 130px;
 }
 
-.headerSection #headerImgMouse {
+.header-section #header-img-mouse {
   position: absolute;
   top: 550px;
   right: 180px;
   width: 75px;
 }
 
-.headerSection #scrollDownIco {
+.header-section #scroll-down-ico {
   margin-top: 250px;
 }
 
-.headerSection #scrollDownIco:hover {
+.header-section #scroll-down-ico:hover {
   cursor: pointer;
 }
 
-.headerSection p {
+.header-section p {
   font-family: 'Open Sans', sans-serif;
   margin-top: 12px;
   font-size: 14px;
   color: #e84c3d;
 }
 
-.aboutSection {
+.about-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,11 +186,11 @@ header .mobileMenuItems {
   padding-block: 110px;
 }
 
-.aboutSection .aboutSectionText {
+.about-section .about-section-text {
   width: 450px;
 }
 
-.aboutSection .aboutSectionText h3 {
+.about-section .about-section-text h3 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 18px;
   color: #333b46;
@@ -198,7 +198,7 @@ header .mobileMenuItems {
   letter-spacing: 4px;
 }
 
-.aboutSection .aboutSectionText hr {
+.about-section .about-section-text hr {
   width: 50px;
   height: 3px;
   background-color: #898989;
@@ -206,14 +206,14 @@ header .mobileMenuItems {
   margin-bottom: 40px;
 }
 
-.aboutSection .aboutSectionText p {
+.about-section .about-section-text p {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 40px;
   color: #81868e;
   font-size: 15.4px;
 }
 
-.aboutSection .aboutSectionText button {
+.about-section .about-section-text button {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 15px;
@@ -225,7 +225,7 @@ header .mobileMenuItems {
   color: white;
 }
 
-.aboutSection .aboutSectionText button:hover {
+.about-section .about-section-text button:hover {
   background-color: #e5e5e5;
   color: #e84c3d;
   cursor: pointer;
@@ -233,16 +233,16 @@ header .mobileMenuItems {
   transition: 0.2s;
 }
 
-.aboutSection .aboutSectionImg img {
+.about-section .about-section-img img {
   width: 400px;
 }
 
-.whatWeDoSection {
+.what-we-do-section {
   background-color: #f3f3f3;
   padding-bottom: 100px;
 }
 
-.whatWeDoSection .whatWeDoSectionHeader {
+.what-we-do-section .what-we-do-section-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +256,7 @@ header .mobileMenuItems {
   margin-bottom: 35px;
 }
 
-.whatWeDoSection .whatWeDoSectionHeader h3 {
+.what-we-do-section .what-we-do-section-header h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   color: #333b46;
@@ -264,7 +264,7 @@ header .mobileMenuItems {
   margin-bottom: 18px;
 }
 
-.whatWeDoSection .whatWeDoSectionHeader hr {
+.what-we-do-section .what-we-do-section-header hr {
   width: 50px;
   width: 50px;
   height: 3px;
@@ -273,7 +273,7 @@ header .mobileMenuItems {
   margin-bottom: 35px;
 }
 
-.whatWeDoSection .whatWeDoSectionHeader p {
+.what-we-do-section .what-we-do-section-header p {
   font-family: 'Open Sans', sans-serif;
   font-size: 15.4px;
   color: #81868e;
@@ -281,17 +281,17 @@ header .mobileMenuItems {
   text-align: center;
 }
 
-.whatWeDoSection .whatWeDoSectionCards {
+.what-we-do-section .what-we-do-section-cards {
   width: 950px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.whatWeDoSection .whatWeDoSectionCards:hover {
+.what-we-do-section .what-we-do-section-cards:hover {
   cursor: pointer;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,16 +307,16 @@ header .mobileMenuItems {
           padding-block-start: 25px;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .clickedCard {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .clicked-card {
   background-color: #e84c3d;
   color: #ffffff !important;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .clickedCardImage {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .clicked-card-image {
   background-color: #f3f3f3 !important;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,18 +334,18 @@ header .mobileMenuItems {
   color: #81868e;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-image {
   height: 76px;
   background-color: #e84c3d;
   padding: 22px;
   border-radius: 50%;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage img {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-image img {
   width: 35px;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText h4 {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-text h4 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -354,11 +354,11 @@ header .mobileMenuItems {
   letter-spacing: 1.5px;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText .clickedSpan {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-text .clicked-span {
   background-color: #ffffff;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText span {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-text span {
   display: inline-block;
   height: 2.3px;
   width: 30px;
@@ -367,12 +367,12 @@ header .mobileMenuItems {
   border-radius: 2px;
 }
 
-.whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText p {
+.what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-text p {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
 }
 
-.counterSection {
+.counter-section {
   background-image: url("../img/counterBack.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,27 +390,27 @@ header .mobileMenuItems {
   font-family: 'Roboto', sans-serif;
 }
 
-.counterSection .counterBox {
+.counter-section .counter-box {
   color: white;
 }
 
-.counterSection .counterBox i {
+.counter-section .counter-box i {
   font-size: 40px;
   padding-right: 10px;
 }
 
-.counterSection .counterBox .number {
+.counter-section .counter-box .number {
   font-size: 40px;
   letter-spacing: 3px;
   display: inline;
 }
 
-.counterSection .counterBox .text {
+.counter-section .counter-box .text {
   margin-top: 18px;
   font-size: 16px;
 }
 
-.counterSection .counterBox span {
+.counter-section .counter-box span {
   display: inline-block;
   margin-top: 20px;
   background-color: white;
@@ -419,11 +419,11 @@ header .mobileMenuItems {
   height: 2.5px;
 }
 
-.simpleStepsSection {
+.simple-steps-section {
   background-color: #f3f3f3;
 }
 
-.simpleStepsSection .simpleStepsSectionHeaderText {
+.simple-steps-section .simple-steps-section-header-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,7 +437,7 @@ header .mobileMenuItems {
   padding-block: 90px;
 }
 
-.simpleStepsSection .simpleStepsSectionHeaderText h3 {
+.simple-steps-section .simple-steps-section-header-text h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   color: #333b46;
@@ -445,7 +445,7 @@ header .mobileMenuItems {
   margin-bottom: 18px;
 }
 
-.simpleStepsSection .simpleStepsSectionHeaderText hr {
+.simple-steps-section .simple-steps-section-header-text hr {
   width: 50px;
   width: 50px;
   height: 3px;
@@ -454,7 +454,7 @@ header .mobileMenuItems {
   margin-bottom: 35px;
 }
 
-.simpleStepsSection .simpleStepsSectionHeaderText p {
+.simple-steps-section .simple-steps-section-header-text p {
   font-family: 'Open Sans', sans-serif;
   font-size: 15.4px;
   color: #81868e;
@@ -462,7 +462,7 @@ header .mobileMenuItems {
   text-align: center;
 }
 
-.simpleStepsSection .simpleStepsSectionImgsDiv {
+.simple-steps-section .simple-steps-section-imgs-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,18 +474,18 @@ header .mobileMenuItems {
           justify-content: center;
 }
 
-.simpleStepsSection .simpleStepsSectionImgsDiv img {
+.simple-steps-section .simple-steps-section-imgs-div img {
   width: 110px;
 }
 
-.simpleStepsSection .simpleStepsSectionImgsDiv .stepIcoLine {
+.simple-steps-section .simple-steps-section-imgs-div .step-ico-line {
   display: inline-block;
   height: 3px;
   width: 300px;
   background-color: #ebebeb;
 }
 
-.simpleStepsSection .simpleStepsSectionDescriptionDiv {
+.simple-steps-section .simple-steps-section-description-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,19 +500,19 @@ header .mobileMenuItems {
   padding-bottom: 90px;
 }
 
-.simpleStepsSection .simpleStepsSectionDescriptionDiv .simpleStepsSectionDescriptionText {
+.simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text {
   text-align: center;
   width: 340px;
   color: #333b46;
 }
 
-.simpleStepsSection .simpleStepsSectionDescriptionDiv .simpleStepsSectionDescriptionText h3 {
+.simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text h3 {
   font-family: 'Roboto', sans-serif;
   color: #333b46;
   letter-spacing: 2px;
 }
 
-.simpleStepsSection .simpleStepsSectionDescriptionDiv .simpleStepsSectionDescriptionText p {
+.simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text p {
   font-family: 'Open Sans', sans-serif;
   color: #81868e;
   letter-spacing: 0.5px;
@@ -520,11 +520,11 @@ header .mobileMenuItems {
   margin-top: 25px;
 }
 
-.featuredWorkSection {
+.featured-work-section {
   background-color: #ececec;
 }
 
-.featuredWorkSection .featuredWorkSectionText {
+.featured-work-section .featured-work-section-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,7 +538,7 @@ header .mobileMenuItems {
   padding-block: 100px;
 }
 
-.featuredWorkSection .featuredWorkSectionText h3 {
+.featured-work-section .featured-work-section-text h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   color: #333b46;
@@ -546,7 +546,7 @@ header .mobileMenuItems {
   margin-bottom: 18px;
 }
 
-.featuredWorkSection .featuredWorkSectionText hr {
+.featured-work-section .featured-work-section-text hr {
   width: 50px;
   width: 50px;
   height: 3px;
@@ -555,7 +555,7 @@ header .mobileMenuItems {
   margin-bottom: 35px;
 }
 
-.featuredWorkSection .featuredWorkSectionText p {
+.featured-work-section .featured-work-section-text p {
   font-family: 'Open Sans', sans-serif;
   font-size: 15.4px;
   color: #81868e;
@@ -563,14 +563,14 @@ header .mobileMenuItems {
   text-align: center;
 }
 
-.featuredWorkImagesSection {
+.featured-work-images-section {
   max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ececec;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll {
+.featured-work-images-section .featured-work-images-div-all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,23 +579,23 @@ header .mobileMenuItems {
           justify-content: center;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv .hide {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div .hide {
   display: none;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv img {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div img {
   width: 100%;
   height: auto;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv img:hover + .hide {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div img:hover + .hide {
   display: block;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -608,18 +608,18 @@ header .mobileMenuItems {
   opacity: 0.9;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv img:hover {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div img:hover {
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%);
   z-index: 5;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv .overlay {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div .overlay {
   background-color: #e84c3d;
   padding: 100px 130px;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv button {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div button {
   display: absolute;
   width: 120px;
   background-color: transparent;
@@ -630,11 +630,11 @@ header .mobileMenuItems {
   cursor: pointer;
 }
 
-.bestServiceSection {
+.best-service-section {
   background-color: #ececec;
 }
 
-.bestServiceSection .bestServiceSectionText {
+.best-service-section .best-service-section-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +648,7 @@ header .mobileMenuItems {
   padding-block: 100px;
 }
 
-.bestServiceSection .bestServiceSectionText h3 {
+.best-service-section .best-service-section-text h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   color: #333b46;
@@ -656,7 +656,7 @@ header .mobileMenuItems {
   margin-bottom: 18px;
 }
 
-.bestServiceSection .bestServiceSectionText hr {
+.best-service-section .best-service-section-text hr {
   width: 50px;
   width: 50px;
   height: 3px;
@@ -665,7 +665,7 @@ header .mobileMenuItems {
   margin-bottom: 35px;
 }
 
-.bestServiceSection .bestServiceSectionText p {
+.best-service-section .best-service-section-text p {
   font-family: 'Open Sans', sans-serif;
   font-size: 15.4px;
   color: #81868e;
@@ -673,13 +673,13 @@ header .mobileMenuItems {
   text-align: center;
 }
 
-.bestServiceImagesSection {
+.best-service-images-section {
   background-color: #e84c3d;
   margin-right: auto;
   margin-left: auto;
 }
 
-.bestServiceImagesSection .bestServiceImagesSectionRow {
+.best-service-images-section .best-service-images-section-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,11 +696,11 @@ header .mobileMenuItems {
   background-color: #e84c3d;
 }
 
-.bestServiceImagesSection .bestServiceImagesSectionRow img {
+.best-service-images-section .best-service-images-section-row img {
   max-width: 650px;
 }
 
-.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText {
+.best-service-images-section .best-service-images-section-row .best-service-images-section-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,13 +713,13 @@ header .mobileMenuItems {
   color: white;
 }
 
-.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText h3 {
+.best-service-images-section .best-service-images-section-row .best-service-images-section-text h3 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
-.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText span {
+.best-service-images-section .best-service-images-section-row .best-service-images-section-text span {
   display: inline-block;
   height: 2.3px;
   width: 45px;
@@ -728,7 +728,7 @@ header .mobileMenuItems {
   border-radius: 2px;
 }
 
-.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText p {
+.best-service-images-section .best-service-images-section-row .best-service-images-section-text p {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.5px;
   font-size: 15px;
@@ -739,7 +739,7 @@ header .mobileMenuItems {
   max-width: 1000px;
 }
 
-.bestServiceImagesSection .bestServiceImagesSectionRow .middle {
+.best-service-images-section .best-service-images-section-row .middle {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -755,7 +755,7 @@ header .mobileMenuItems {
   header {
     padding-block: 35px;
   }
-  header #logoText {
+  header #logo-text {
     margin-left: 60px;
   }
   header nav {
@@ -765,115 +765,115 @@ header .mobileMenuItems {
     font-size: 15.66px;
     padding-inline: 12px;
   }
-  .headerSection {
+  .header-section {
     height: 780px;
   }
-  .headerSection #headerImgHeadphones {
+  .header-section #header-img-headphones {
     top: 140px;
     width: 150px;
   }
-  .headerSection #headerImgSunglasses {
+  .header-section #header-img-sunglasses {
     left: 80px;
     width: 120px;
   }
-  .headerSection #headerImgPencil1 {
+  .header-section #header-img-pencil-1 {
     top: 610px;
     left: 42px;
     width: 100px;
   }
-  .headerSection #headerImgPencil2 {
+  .header-section #header-img-pencil-2 {
     left: 20px;
     width: 120px;
   }
-  .headerSection h1 {
+  .header-section h1 {
     font-size: 39.66px;
     letter-spacing: 3.5px;
   }
-  .headerSection h3 {
+  .header-section h3 {
     font-size: 18px;
     letter-spacing: 6px;
     margin-right: 36px;
   }
-  .headerSection #headerImgCork {
+  .header-section #header-img-cork {
     right: 50px;
     width: 75px;
   }
-  .headerSection #headerImgGlass {
+  .header-section #header-img-glass {
     right: 40px;
     width: 68px;
   }
-  .headerSection #headerImgPenHolder {
+  .header-section #header-img-pen-holder {
     right: 15px;
     width: 90px;
   }
-  .headerSection #headerImgMouse {
+  .header-section #header-img-mouse {
     top: 540px;
     right: 160px;
     width: 55px;
   }
-  .headerSection #scrollDownIco {
+  .header-section #scroll-down-ico {
     margin-top: 270px;
     width: 20px;
   }
-  .headerSection p {
+  .header-section p {
     font-size: 12px;
   }
-  .aboutSection {
+  .about-section {
     gap: 40px;
   }
-  .aboutSection .aboutSectionText {
+  .about-section .about-section-text {
     width: 400px;
   }
-  .aboutSection .aboutSectionText p {
+  .about-section .about-section-text p {
     font-size: 14.4px;
   }
-  .aboutSection .aboutSectionImg img {
+  .about-section .about-section-img img {
     width: 360px;
   }
-  .whatWeDoSection .whatWeDoSectionHeader p {
+  .what-we-do-section .what-we-do-section-header p {
     width: 550px;
   }
-  .whatWeDoSection .whatWeDoSectionCards {
+  .what-we-do-section .what-we-do-section-cards {
     width: 840px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row {
     gap: 15px;
     -webkit-padding-before: 15px;
             padding-block-start: 15px;
   }
-  .counterSection {
+  .counter-section {
     height: 330px;
     gap: 60px;
   }
-  .counterSection .counterBox i {
+  .counter-section .counter-box i {
     font-size: 33px;
   }
-  .counterSection .counterBox .number {
+  .counter-section .counter-box .number {
     font-size: 32px;
   }
-  .counterSection .counterBox .text {
+  .counter-section .counter-box .text {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .stopScroll {
+  .stop-scroll {
     overflow: hidden;
   }
-  header #logoText {
+  header #logo-text {
     font-size: 34px;
   }
   header nav {
     display: none;
   }
-  header .mobileMenuDiv {
+  header .mobile-menu-div {
     z-index: 3;
     margin-right: 50px;
   }
-  header .mobileMenuDiv:hover {
+  header .mobile-menu-div:hover {
     cursor: pointer;
   }
-  header .mobileMenuDiv .menuIcon {
+  header .mobile-menu-div .menu-icon {
     width: 28px;
     height: 2px;
     background-color: #e84c3d;
@@ -882,23 +882,23 @@ header .mobileMenuItems {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-  header .mobileMenuDiv .bar1.open {
+  header .mobile-menu-div .bar-1.open {
     width: 20px;
     -webkit-transform: rotate(405deg);
             transform: rotate(405deg);
     margin: 0px;
   }
-  header .mobileMenuDiv .bar2.open {
+  header .mobile-menu-div .bar-2.open {
     -webkit-transform: translateX(-20px);
             transform: translateX(-20px);
   }
-  header .mobileMenuDiv .bar3.open {
+  header .mobile-menu-div .bar-3.open {
     width: 20px;
     -webkit-transform: rotate(-405deg);
             transform: rotate(-405deg);
     margin: 0px;
   }
-  header .mobileMenuItems {
+  header .mobile-menu-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -924,7 +924,7 @@ header .mobileMenuItems {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-  header .mobileMenuItems a {
+  header .mobile-menu-items a {
     font-family: 'Open Sans', sans-serif;
     padding-block: 12px;
     text-align: right;
@@ -937,110 +937,110 @@ header .mobileMenuItems {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  header .mobileMenuItems.open {
+  header .mobile-menu-items.open {
     width: 100%;
     background-color: #333b46fc;
   }
-  .headerSection #headerImgHeadphones {
+  .header-section #header-img-headphones {
     top: 140px;
     width: 120px;
   }
-  .headerSection #headerImgSunglasses {
+  .header-section #header-img-sunglasses {
     top: 430px;
     left: 80px;
     width: 90px;
   }
-  .headerSection #headerImgPencil1 {
+  .header-section #header-img-pencil1 {
     top: 565px;
     left: 52px;
     width: 75px;
   }
-  .headerSection #headerImgPencil2 {
+  .header-section #header-img-pencil2 {
     top: 550px;
     left: 30px;
     width: 100px;
   }
-  .headerSection h1 {
+  .header-section h1 {
     font-size: 32px;
     letter-spacing: 3px;
   }
-  .headerSection h3 {
+  .header-section h3 {
     font-size: 14px;
     letter-spacing: 5px;
     margin-right: 37px;
   }
-  .headerSection #headerImgCork {
+  .header-section #header-img-cork {
     right: 50px;
     width: 60px;
   }
-  .headerSection #headerImgGlass {
+  .header-section #header-img-glass {
     top: 220px;
     right: 42px;
     width: 53px;
   }
-  .headerSection #headerImgPenHolder {
+  .header-section #header-img-pen-holder {
     right: 15px;
     width: 70px;
   }
-  .headerSection #headerImgMouse {
+  .header-section #header-img-mouse {
     top: 500px;
     right: 130px;
     width: 45px;
   }
-  .headerSection p {
+  .header-section p {
     font-size: 12px;
   }
-  .aboutSection {
+  .about-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-block: 80px;
   }
-  .aboutSection .aboutSectionText {
+  .about-section .about-section-text {
     text-align: center;
   }
-  .aboutSection .aboutSectionText hr {
+  .about-section .about-section-text hr {
     margin-right: auto;
     margin-left: auto;
   }
-  .aboutSection .aboutSectionImg img {
+  .about-section .about-section-img img {
     width: 390px;
   }
-  .whatWeDoSection {
+  .what-we-do-section {
     padding-bottom: 70px;
   }
-  .whatWeDoSection .whatWeDoSectionHeader p {
+  .what-we-do-section .what-we-do-section-header p {
     width: 450px;
     font-size: 14.4px;
   }
-  .whatWeDoSection .whatWeDoSectionCards {
+  .what-we-do-section .what-we-do-section-cards {
     width: 430px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card {
     padding: 35px 25px;
   }
-  .counterSection {
+  .counter-section {
     height: 250px;
     gap: 25px;
   }
-  .counterSection .counterBox i {
+  .counter-section .counter-box i {
     font-size: 22px;
   }
-  .counterSection .counterBox .number {
+  .counter-section .counter-box .number {
     font-size: 22px;
   }
-  .counterSection .counterBox .text {
+  .counter-section .counter-box .text {
     margin-top: 12px;
     font-size: 11px;
   }
-  .counterSection .counterBox span {
+  .counter-section .counter-box span {
     margin-top: 15px;
   }
 }
@@ -1049,134 +1049,134 @@ header .mobileMenuItems {
   header {
     padding-block: 25px;
   }
-  header #logoText {
+  header #logo-text {
     font-size: 28px;
     margin-left: 40px;
   }
-  header .mobileMenu {
+  header .mobile-menu {
     margin-right: 40px;
   }
-  .headerSection {
+  .header-section {
     height: 600px;
   }
-  .headerSection #headerImgHeadphones {
+  .header-section #header-img-headphones {
     top: 100px;
     width: 90px;
   }
-  .headerSection #headerImgSunglasses {
+  .header-section #header-img-sunglasses {
     top: 360px;
     left: 40px;
     width: 70px;
   }
-  .headerSection #headerImgPencil1 {
+  .header-section #header-img-pencil-1 {
     top: 455px;
     left: 32px;
     width: 45px;
   }
-  .headerSection #headerImgPencil2 {
+  .header-section #header-img-pencil-2 {
     top: 445px;
     left: 20px;
     width: 55px;
   }
-  .headerSection h1 {
+  .header-section h1 {
     margin-top: 230px;
     font-size: 28px;
     text-align: center;
   }
-  .headerSection h3 {
+  .header-section h3 {
     font-size: 12px;
     text-align: center;
     margin-right: 0;
   }
-  .headerSection #headerImgCork {
+  .header-section #header-img-cork {
     top: 150px;
     right: 50px;
     width: 40px;
   }
-  .headerSection #headerImgGlass {
+  .header-section #header-img-glass {
     top: 145px;
     right: 42px;
     width: 38px;
   }
-  .headerSection #headerImgPenHolder {
+  .header-section #header-img-pen-holder {
     top: 330px;
     right: 15px;
     width: 50px;
   }
-  .headerSection #headerImgMouse {
+  .header-section #header-img-mouse {
     top: 400px;
     right: 90px;
     width: 30px;
   }
-  .headerSection #scrollDownIco {
+  .header-section #scroll-down-ico {
     margin-top: 170px;
     width: 17px;
   }
-  .headerSection p {
+  .header-section p {
     font-size: 9px;
   }
-  .aboutSection {
+  .about-section {
     padding-block: 50px;
   }
-  .aboutSection .aboutSectionText {
+  .about-section .about-section-text {
     width: 300px;
   }
-  .aboutSection .aboutSectionText h3 {
+  .about-section .about-section-text h3 {
     font-size: 22.4px;
   }
-  .aboutSection .aboutSectionText p {
+  .about-section .about-section-text p {
     font-size: 12.5px;
   }
-  .aboutSection .aboutSectionText button {
+  .about-section .about-section-text button {
     font-size: 13px;
     padding: 10px 13px;
   }
-  .aboutSection .aboutSectionImg {
+  .about-section .about-section-img {
     padding-inline: 30px;
   }
-  .aboutSection .aboutSectionImg img {
+  .about-section .about-section-img img {
     width: 100%;
     height: auto;
   }
-  .whatWeDoSection {
+  .what-we-do-section {
     padding-bottom: 65px;
   }
-  .whatWeDoSection .whatWeDoSectionHeader h3 {
+  .what-we-do-section .what-we-do-section-header h3 {
     font-size: 22.4px;
   }
-  .whatWeDoSection .whatWeDoSectionHeader p {
+  .what-we-do-section .what-we-do-section-header p {
     width: 300px;
     font-size: 12.5px;
   }
-  .whatWeDoSection .whatWeDoSectionCards {
+  .what-we-do-section .what-we-do-section-cards {
     width: 300px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row {
     -webkit-padding-before: 20px;
             padding-block-start: 20px;
     gap: 20px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card {
     padding: 20px 15px;
     gap: 15px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-image {
     height: 52px;
     padding: 15px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardImage img {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-image img {
     width: 25px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText h4 {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-text h4 {
     font-size: 13.5px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText span {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-text span {
     height: 2px;
   }
-  .whatWeDoSection .whatWeDoSectionCards .whatWeDoSectionCardsRow .card .cardText p {
+  .what-we-do-section .what-we-do-section-cards .what-we-do-section-cards-row .card .card-text p {
     font-size: 10.5px;
   }
-  .counterSection {
+  .counter-section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
@@ -1184,7 +1184,7 @@ header .mobileMenuItems {
     height: 250px;
     padding-block: 30px;
   }
-  .counterSection .counterBox {
+  .counter-section .counter-box {
     width: 40%;
   }
 }

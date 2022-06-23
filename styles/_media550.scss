@@ -2,32 +2,32 @@
 
     header{
         padding-block: 25px;
-        #logoText{
+        #logo-text{
             font-size: 28px;
             margin-left: 40px;
         }
-        .mobileMenu{
+        .mobile-menu{
             margin-right: 40px;
         }
     }
 
-    .headerSection{
+    .header-section{
         height: 600px;
-        #headerImgHeadphones{
+        #header-img-headphones{
             top: 100px;
             width: 90px;
         }
-        #headerImgSunglasses{
+        #header-img-sunglasses{
             top: 360px;
             left: 40px;
             width: 70px;
         }
-        #headerImgPencil1{
+        #header-img-pencil-1{
             top: 455px;
             left: 32px;
             width: 45px;
         }
-        #headerImgPencil2{
+        #header-img-pencil-2{
             top: 445px;
             left: 20px;
             width: 55px;
@@ -42,27 +42,27 @@
             text-align: center;
             margin-right: 0;
         }
-        #headerImgCork{
+        #header-img-cork{
             top: 150px;
             right: 50px;
             width: 40px;
         }
-        #headerImgGlass{
+        #header-img-glass{
             top: 145px;
             right: 42px;
             width: 38px;
         }
-        #headerImgPenHolder{
+        #header-img-pen-holder{
             top: 330px;
             right: 15px;
             width: 50px;
         }
-        #headerImgMouse{
+        #header-img-mouse{
             top: 400px;
             right: 90px;
             width: 30px;
         }
-        #scrollDownIco{
+        #scroll-down-ico{
             margin-top: 170px;
             width: 17px;
         }
@@ -71,9 +71,9 @@
         }
     }
 
-    .aboutSection{
+    .about-section{
         padding-block: 50px;
-        .aboutSectionText{
+        .about-section-text{
             width: 300px;
             h3{
                 font-size: 22.4px;
@@ -86,7 +86,7 @@
                 padding: 10px 13px;
             }
         }
-        .aboutSectionImg{
+        .about-section-img{
             padding-inline: 30px;
             img{
                 width: 100%;
@@ -95,9 +95,9 @@
         }
     }
 
-    .whatWeDoSection{
+    .what-we-do-section{
         padding-bottom: 65px;
-        .whatWeDoSectionHeader{
+        .what-we-do-section-header{
             h3{
                 font-size: 22.4px;
             }
@@ -106,22 +106,22 @@
                 font-size: 12.5px;
             }
         }
-        .whatWeDoSectionCards{
+        .what-we-do-section-cards{
             width: 300px;
-            .whatWeDoSectionCardsRow{
+            .what-we-do-section-cards-row{
                 padding-block-start: 20px;
                 gap: 20px;
                 .card{
                     padding: 20px 15px;
                     gap: 15px;
-                    .cardImage{
+                    .card-image{
                         height: 52px;
                         padding: 15px;
                         img{
                             width: 25px;
                         }
                     }
-                    .cardText{
+                    .card-text{
                         h4{
                             font-size: 13.5px;
                         }
@@ -137,13 +137,13 @@
         }
     }
 
-    .counterSection{
+    .counter-section{
         flex-wrap: wrap;
         text-align: center;
         gap: 0px;
         height: 250px;
         padding-block: 30px;
-        .counterBox{
+        .counter-box{
             width: 40%;
            
         }

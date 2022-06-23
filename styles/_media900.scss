@@ -2,24 +2,24 @@
 @import "./fonts";
 @media only screen and (max-width: 900px) {
 
-    .stopScroll{
+    .stop-scroll{
         overflow: hidden;
     }
 
     header{
-        #logoText{
+        #logo-text{
             font-size: 34px;
         }
         nav{
             display: none;
         }
-        .mobileMenuDiv{
+        .mobile-menu-div{
             z-index: 3;
             margin-right: 50px;
             &:hover{
                 cursor: pointer;
             }
-            .menuIcon{
+            .menu-icon{
                 width: 28px;
                 height: 2px;
                 background-color: $mainOrange;
@@ -27,22 +27,22 @@
                 border-radius: 10px;
                 transition: 0.4s;
             }
-            .bar1.open{
+            .bar-1.open{
                 width: 20px;
                 transform: rotate(405deg);
                 margin: 0px;
             }
-            .bar2.open{
+            .bar-2.open{
                 transform: translateX(-20px);
                 // background: transparent;
             }
-            .bar3.open{
+            .bar-3.open{
                 width: 20px;
                 transform: rotate(-405deg); 
                 margin: 0px;
             }
         }
-        .mobileMenuItems{
+        .mobile-menu-items{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -69,28 +69,28 @@
                 transition: 0.3s;
             }
         }
-        .mobileMenuItems.open{
+        .mobile-menu-items.open{
             width: 100%;
             background-color: #333b46fc;
         }
     }
 
-    .headerSection{
-        #headerImgHeadphones{
+    .header-section{
+        #header-img-headphones{
             top: 140px;
             width: 120px;
         }
-        #headerImgSunglasses{
+        #header-img-sunglasses{
             top: 430px;
             left: 80px;
             width: 90px;
         }
-        #headerImgPencil1{
+        #header-img-pencil1{
             top: 565px;
             left: 52px;
             width: 75px;
         }
-        #headerImgPencil2{
+        #header-img-pencil2{
             top: 550px;
             left: 30px;
             width: 100px;
@@ -104,20 +104,20 @@
             letter-spacing: 5px;
             margin-right: 37px;
         }
-        #headerImgCork{
+        #header-img-cork{
             right: 50px;
             width: 60px;
         }
-        #headerImgGlass{
+        #header-img-glass{
             top: 220px;
             right: 42px;
             width: 53px;
         }
-        #headerImgPenHolder{
+        #header-img-pen-holder{
             right: 15px;
             width: 70px;
         }
-        #headerImgMouse{
+        #header-img-mouse{
             top: 500px;
             right: 130px;
             width: 45px;
@@ -127,34 +127,34 @@
         }
     }
 
-    .aboutSection{
+    .about-section{
         flex-direction: column;
         padding-block: 80px;
-        .aboutSectionText{
+        .about-section-text{
             text-align: center;
             hr{
                 margin-right: auto;
                 margin-left: auto;
             }
         }
-        .aboutSectionImg{
+        .about-section-img{
             img{
                 width: 390px;
             }
         }
     }
 
-    .whatWeDoSection{
+    .what-we-do-section{
         padding-bottom: 70px;
-        .whatWeDoSectionHeader{
+        .what-we-do-section-header{
             p{
                 width: 450px;
                 font-size: 14.4px;
             }
         }
-        .whatWeDoSectionCards{
+        .what-we-do-section-cards{
             width: 430px;
-            .whatWeDoSectionCardsRow{
+            .what-we-do-section-cards-row{
                 flex-direction: column;
                 .card{
                     padding: 35px 25px;
@@ -163,10 +163,10 @@
         }
     }
     
-    .counterSection{
+    .counter-section{
         height: 250px;
         gap: 25px;
-        .counterBox{
+        .counter-box{
             i{
                 font-size: 22px;
             }

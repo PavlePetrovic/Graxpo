@@ -6,21 +6,21 @@ window.onload = function() {
     /*                     DOM                  */
     // Mobile menu
     let body = document.querySelector('body')
-    let hamburgerIcon = document.querySelector('.mobileMenuDiv')
-    let mobileMenuItems = document.querySelector('.mobileMenuItems')
+    let hamburgerIcon = document.querySelector('.mobile-menu-div')
+    let mobileMenuItems = document.querySelector('.mobile-menu-items')
     // Card section
-    let cardSection = document.querySelector('.whatWeDoSectionCards')
+    let cardSection = document.querySelector('.what-we-do-section-cards')
     let cardBox = document.querySelectorAll('.card')
     // Counter section
-    let num1 = document.getElementById('number1')
-    let num2 = document.getElementById('number2')
-    let num3 = document.getElementById('number3')
-    let num4 = document.getElementById('number4') 
+    let num1 = document.getElementById('number-1')
+    let num2 = document.getElementById('number-2')
+    let num3 = document.getElementById('number-3')
+    let num4 = document.getElementById('number-4') 
 
     /*                  MOBILE MENU                 */
     // Hamburger icon
     hamburgerIcon.addEventListener('click', () => {
-        body.classList.toggle('stopScroll')
+        body.classList.toggle('stop-scroll')
         mobileMenuItems.classList.toggle('open')
         
         for(let i = 0; i < 3; i++){
@@ -29,7 +29,7 @@ window.onload = function() {
     })
     // Hamburger menu items
     mobileMenuItems.addEventListener('click', () => {
-        body.classList.toggle('stopScroll')
+        body.classList.toggle('stop-scroll')
         mobileMenuItems.classList.toggle('open')
 
         for(let i = 0; i < 3; i++){
@@ -51,26 +51,26 @@ window.onload = function() {
 
             allCards.forEach(card => {
                 // Kartica
-                card.classList.remove('clickedCard')
+                card.classList.remove('clicked-card')
                 // Div u kome je slicica kartice
-                card.children[0].classList.remove('clickedCardImage')
+                card.children[0].classList.remove('clicked-card-image')
                 // Span element - Linija
-                card.children[1].children[1].classList.remove('clickedSpan')
+                card.children[1].children[1].classList.remove('clicked-span')
                 // Slicica u kartici - putanja
                 card.children[0].children[0].setAttribute('src', './img/computerWhite.png')
             })
 
             console.log(card);
 
-            if( card.classList.contains('clickedCard') ){
+            if( card.classList.contains('clicked-card') ){
                 card.classList.removeAll()
                 card.children[0].classList.removeAll()
                 card.children[1].children[1].classList.removeAll()
                 card.children[0].children[0].setAttribute('src', './img/computerOrange.png')
             } else{
-                card.classList.add('clickedCard')
-                card.children[0].classList.add('clickedCardImage')
-                card.children[1].children[1].classList.add('clickedSpan')
+                card.classList.add('clicked-card')
+                card.children[0].classList.add('clicked-card-image')
+                card.children[1].children[1].classList.add('clicked-span')
                 card.children[0].children[0].setAttribute('src', './img/computerOrange.png')
             }
         

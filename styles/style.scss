@@ -23,7 +23,7 @@ header{
     background-color: #e5e5e5;
     z-index: 1;
 
-    #logoText{
+    #logo-text{
         font-family: 'Leckerli One', cursive;
         margin-right: auto;
         margin-left: 99px;
@@ -57,14 +57,14 @@ header{
         }
     }
     
-    .mobileMenuItems{
+    .mobile-menu-items{
         display: none;
     }
   
 
 }
 
-.headerSection{
+.header-section{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -74,27 +74,27 @@ header{
     height: 800px;
     z-index: 0;
 
-    #headerImgHeadphones{
+    #header-img-headphones{
         position: absolute;
         top: 180px;
         left: 0px;
         width: 200px;
     }
 
-    #headerImgSunglasses{
+    #header-img-sunglasses{
         position: absolute;
         top: 440px;
         left: 175px;
         width: 155px;
     }
 
-    #headerImgPencil1{
+    #header-img-pencil1{
         position: absolute;
         top: 622px;
         left: 110px;
     }
 
-    #headerImgPencil2{
+    #header-img-pencil-2{
         position: absolute;
         top: 590px;
         left: 70px;
@@ -115,35 +115,35 @@ header{
         margin-top: 5px;
     }
 
-    #headerImgCork{
+    #header-img-cork{
         position: absolute;     
         top: 230px;   
         right: 80px;
         width: 95px;
     }
 
-    #headerImgGlass{
+    #header-img-glass{
         position: absolute;
         top: 215px;
         right: 70px;
         width: 86px;
     }
 
-    #headerImgPenHolder{
+    #header-img-pen-holder{
         position: absolute;
         top: 400px;
         right: 18px;
         width: 130px;
     }
 
-    #headerImgMouse{
+    #header-img-mouse{
         position: absolute;
         top: 550px;
         right: 180px;
         width: 75px;
     }
 
-    #scrollDownIco{
+    #scroll-down-ico{
         margin-top: 250px;
 
         &:hover{
@@ -161,7 +161,7 @@ header{
 
 // About section
 
-.aboutSection{
+.about-section{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +169,7 @@ header{
     background-color: #f3f3f3;
     padding-block: 110px;
    
-    .aboutSectionText{
+    .about-section-text{
         width: 450px;
 
         h3{
@@ -211,7 +211,7 @@ header{
         }
     }
 
-    .aboutSectionImg{
+    .about-section-img{
         
         img{
             width: 400px;
@@ -221,11 +221,11 @@ header{
 
 // What we do section
 
-.whatWeDoSection{
+.what-we-do-section{
     background-color: #f3f3f3;
     padding-bottom: 100px;
 
-    .whatWeDoSectionHeader{
+    .what-we-do-section-header{
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -254,7 +254,7 @@ header{
         }
     }
 
-    .whatWeDoSectionCards{
+    .what-we-do-section-cards{
         width: 950px;
         margin-left: auto;
         margin-right: auto;
@@ -262,18 +262,18 @@ header{
             cursor: pointer;
         }
 
-        .whatWeDoSectionCardsRow{
+        .what-we-do-section-cards-row{
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 25px;
             padding-block-start: 25px;
 
-            .clickedCard{
+            .clicked-card{
                 background-color: #e84c3d;
                 color: #ffffff !important;
             }
-            .clickedCardImage{
+            .clicked-card-image{
                 background-color: #f3f3f3 !important;
             }
             
@@ -287,7 +287,7 @@ header{
                 gap: 20px;
                 color: $sectionTextColor;
 
-                .cardImage{
+                .card-image{
                     height: 76px;
                     background-color: $mainOrange;
                     padding: 22px;
@@ -298,7 +298,7 @@ header{
                     }
                 }
 
-                .cardText{
+                .card-text{
 
                     h4{
                         font-family: 'Roboto', sans-serif;
@@ -309,7 +309,7 @@ header{
                         letter-spacing: 1.5px;
                     }
 
-                    .clickedSpan{
+                    .clicked-span{
                         background-color: #ffffff;
                     }
 
@@ -334,7 +334,7 @@ header{
 
 // Counter Section
 
-.counterSection{
+.counter-section{
     background-image: url("../img/counterBack.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,7 +345,7 @@ header{
     gap: 80px;
     font-family: 'Roboto', sans-serif;
 
-    .counterBox{
+    .counter-box{
         color: white;
 
         i{
@@ -377,10 +377,10 @@ header{
 
 // Three simple steps section
 
-.simpleStepsSection{
+.simple-steps-section{
     background-color: #f3f3f3;
 
-    .simpleStepsSectionHeaderText{
+    .simple-steps-section-header-text{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -409,7 +409,7 @@ header{
         }
     }
 
-    .simpleStepsSectionImgsDiv{
+    .simple-steps-section-imgs-div{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -418,7 +418,7 @@ header{
             width: 110px;
         }
 
-        .stepIcoLine{
+        .step-ico-line{
             display: inline-block;
             height: 3px;
             width: 300px;
@@ -426,7 +426,7 @@ header{
         }
     }
 
-    .simpleStepsSectionDescriptionDiv{
+    .simple-steps-section-description-div{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -434,7 +434,7 @@ header{
         margin-top: 40px;
         padding-bottom: 90px;
 
-        .simpleStepsSectionDescriptionText{
+        .simple-steps-section-description-text{
             text-align: center;
             width: 340px;
             color: #333b46;
@@ -458,10 +458,10 @@ header{
 
 // Featured work section
 
-.featuredWorkSection{
+.featured-work-section{
     background-color: #ececec;
 
-    .featuredWorkSectionText{
+    .featured-work-section-text{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -493,17 +493,17 @@ header{
 
 // Featured work images section
 
-.featuredWorkImagesSection{
+.featured-work-images-section{
     max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     background-color: #ececec;
 
-    .featuredWorkImagesDivAll{
+    .featured-work-images-div-all{
         display: flex;
         justify-content: center;
 
-        .featuredWorkImagesDiv{
+        .featured-work-images-div{
             position: relative;
             flex-grow: 1;
 
@@ -552,10 +552,10 @@ header{
 
 // Best service section
 
-.bestServiceSection{
+.best-service-section{
     background-color: #ececec;
 
-    .bestServiceSectionText{
+    .best-service-section-text{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -587,12 +587,12 @@ header{
 
 // Best service images section
 
-.bestServiceImagesSection{
+.best-service-images-section{
     background-color: $mainOrange;
     margin-right: auto;
     margin-left: auto;
 
-    .bestServiceImagesSectionRow{
+    .best-service-images-section-row{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -603,7 +603,7 @@ header{
             max-width: 650px;
         }
 
-        .bestServiceImagesSectionText{
+        .best-service-images-section-text{
             display: flex;
             flex-direction: column;
             padding-inline: 130px;
@@ -639,7 +639,7 @@ header{
         }
     }
 
-    .bestServiceImagesSectionRow .middle{
+    .best-service-images-section-row .middle{
         flex-direction: row-reverse;
     }
 }

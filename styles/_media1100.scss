@@ -3,7 +3,7 @@
     header{
         padding-block: 35px;
 
-        #logoText{
+        #logo-text{
             margin-left: 60px;
         }
 
@@ -20,22 +20,22 @@
         }
     }
 
-    .headerSection{
+    .header-section{
         height: 780px;
-        #headerImgHeadphones{
+        #header-img-headphones{
             top: 140px;
             width: 150px;
         }
-        #headerImgSunglasses{
+        #header-img-sunglasses{
             left: 80px;
             width: 120px;
         }
-        #headerImgPencil1{
+        #header-img-pencil-1{
             top: 610px;
             left: 42px;
             width: 100px;
         }
-        #headerImgPencil2{
+        #header-img-pencil-2{
             left: 20px;
             width: 120px;
         }    
@@ -48,24 +48,24 @@
             letter-spacing: 6px;
             margin-right: 36px;
         }
-        #headerImgCork{
+        #header-img-cork{
             right: 50px;
             width: 75px;
         }
-        #headerImgGlass{
+        #header-img-glass{
             right: 40px;
             width: 68px;
         }
-        #headerImgPenHolder{
+        #header-img-pen-holder{
             right: 15px;
             width: 90px;
         }
-        #headerImgMouse{
+        #header-img-mouse{
             top: 540px;
             right: 160px;
             width: 55px;
         }
-        #scrollDownIco{
+        #scroll-down-ico{
             margin-top: 270px;
             width: 20px;
         }
@@ -74,40 +74,40 @@
         }
     }
 
-    .aboutSection{
+    .about-section{
         gap: 40px;
-        .aboutSectionText{
+        .about-section-text{
             width: 400px;
             p{
                 font-size: 14.4px;
             }
         }
-        .aboutSectionImg{
+        .about-section-img{
             img{
                 width: 360px;
             }
         }
     }
 
-    .whatWeDoSection{
-        .whatWeDoSectionHeader{
+    .what-we-do-section{
+        .what-we-do-section-header{
             p{
                 width: 550px;
             }
         }
-        .whatWeDoSectionCards{
+        .what-we-do-section-cards{
             width: 840px;
-            .whatWeDoSectionCardsRow{
+            .what-we-do-section-cards-row{
                 gap: 15px;
                 padding-block-start: 15px;
             }
         }
     }
 
-    .counterSection{
+    .counter-section{
         height: 330px;
         gap: 60px;
-        .counterBox{
+        .counter-box{
             i{
                 font-size: 33px;
             }
@@ -116,9 +116,6 @@
             }
             .text{
                 font-size: 14px;
-            }
-            .span{
-
             }
         }
     }
