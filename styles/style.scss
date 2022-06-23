@@ -421,7 +421,7 @@ header{
         .step-ico-line{
             display: inline-block;
             height: 3px;
-            width: 300px;
+            width: 260px;
             background-color: #ebebeb;
         }
     }
@@ -430,7 +430,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 70px;
+        gap: 32px;
         margin-top: 40px;
         padding-bottom: 90px;
 
@@ -453,6 +453,9 @@ header{
                 margin-top: 25px;
             }
         }
+    }
+    .simple-steps-section-description-text-mobile{
+        display: none;
     }
 }
 
@@ -527,13 +530,12 @@ header{
                 }
                 &:hover{
                     filter: grayscale(90%);
-                    z-index: 5;
                 }
             }
 
             .overlay{
                 background-color: $mainOrange;
-                padding: 100px 130px;
+                padding: 80px 90px;
             }
 
             button{

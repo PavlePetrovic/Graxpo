@@ -481,7 +481,7 @@ header .mobile-menu-items {
 .simple-steps-section .simple-steps-section-imgs-div .step-ico-line {
   display: inline-block;
   height: 3px;
-  width: 300px;
+  width: 260px;
   background-color: #ebebeb;
 }
 
@@ -495,7 +495,7 @@ header .mobile-menu-items {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 70px;
+  gap: 32px;
   margin-top: 40px;
   padding-bottom: 90px;
 }
@@ -518,6 +518,10 @@ header .mobile-menu-items {
   letter-spacing: 0.5px;
   font-size: 15px;
   margin-top: 25px;
+}
+
+.simple-steps-section .simple-steps-section-description-text-mobile {
+  display: none;
 }
 
 .featured-work-section {
@@ -611,12 +615,11 @@ header .mobile-menu-items {
 .featured-work-images-section .featured-work-images-div-all .featured-work-images-div img:hover {
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%);
-  z-index: 5;
 }
 
 .featured-work-images-section .featured-work-images-div-all .featured-work-images-div .overlay {
   background-color: #e84c3d;
-  padding: 100px 130px;
+  padding: 80px 90px;
 }
 
 .featured-work-images-section .featured-work-images-div-all .featured-work-images-div button {
@@ -854,6 +857,56 @@ header .mobile-menu-items {
   .counter-section .counter-box .text {
     font-size: 14px;
   }
+  .simple-steps-section .simple-steps-section-header-text p {
+    width: 550px;
+  }
+  .simple-steps-section .simple-steps-section-imgs-div img {
+    width: 100px;
+  }
+  .simple-steps-section .simple-steps-section-imgs-div .step-ico-line {
+    width: 180px;
+  }
+  .simple-steps-section .simple-steps-section-description-div {
+    gap: 30px;
+  }
+  .simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text {
+    width: 250px;
+  }
+  .simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text h3 {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  .simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text p {
+    font-size: 13px;
+    margin-top: 22px;
+  }
+  .featured-work-section .featured-work-section-text p {
+    width: 550px;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div .overlay {
+    padding: 60px 60px;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div button {
+    padding: 8px 9px;
+  }
+  .best-service-section .best-service-section-text p {
+    width: 550px;
+  }
+  .best-service-images-section .best-service-images-section-row img {
+    min-width: 390px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text {
+    padding-inline: 60px;
+    padding-block: 30px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text h3 {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text p {
+    font-size: 13px;
+    margin-top: 16px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1043,6 +1096,126 @@ header .mobile-menu-items {
   .counter-section .counter-box span {
     margin-top: 15px;
   }
+  .simple-steps-section {
+    padding-bottom: 70px;
+  }
+  .simple-steps-section .simple-steps-section-header-text p {
+    width: 450px;
+    font-size: 14.4px;
+  }
+  .simple-steps-section .simple-steps-section-imgs-div img {
+    width: 80px;
+  }
+  .simple-steps-section .simple-steps-section-imgs-div .step-ico-line {
+    width: 80px;
+  }
+  .simple-steps-section .simple-steps-section-description-div {
+    padding-bottom: 15px;
+    gap: 20px;
+  }
+  .simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text {
+    width: 140px;
+  }
+  .simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text h3 {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+  .simple-steps-section .simple-steps-section-description-div .simple-steps-section-description-text p {
+    display: inline-block;
+    font-size: 10px;
+    margin-top: 22px;
+    vertical-align: top;
+  }
+  .featured-work-section .featured-work-section-text {
+    padding-block: 70px;
+  }
+  .featured-work-section .featured-work-section-text p {
+    width: 450px;
+    font-size: 14.4px;
+  }
+  .featured-work-images-section .featured-work-images-div-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div img:hover + .hide {
+    display: none;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div img:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div .overlay {
+    display: none;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div button {
+    display: none;
+  }
+  .best-service-section {
+    background-color: #ececec;
+  }
+  .best-service-section .best-service-section-text {
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
+  .best-service-section .best-service-section-text p {
+    width: 450px;
+    font-size: 14.4px;
+  }
+  .best-service-images-section {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .best-service-images-section .best-service-images-section-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .best-service-images-section .best-service-images-section-row img {
+    max-width: 420px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text {
+    padding-inline: 70px;
+    padding-block: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text h3 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text span {
+    display: inline-block;
+    width: 45px;
+    margin-bottom: 10px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text p {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 20px;
+    max-width: 1000px;
+    text-align: center;
+  }
+  .best-service-images-section .best-service-images-section-row.middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1186,6 +1359,110 @@ header .mobile-menu-items {
   }
   .counter-section .counter-box {
     width: 40%;
+  }
+  .simple-steps-section {
+    padding-bottom: 0px;
+  }
+  .simple-steps-section .simple-steps-section-header-text {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .simple-steps-section .simple-steps-section-header-text h3 {
+    font-size: 22.4px;
+  }
+  .simple-steps-section .simple-steps-section-header-text p {
+    font-size: 12.5px;
+    width: 300px;
+  }
+  .simple-steps-section .simple-steps-section-imgs-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .simple-steps-section .simple-steps-section-imgs-div .step-ico-line {
+    display: none;
+  }
+  .simple-steps-section .simple-steps-section-description-text {
+    display: none;
+  }
+  .simple-steps-section .simple-steps-section-description-text-mobile {
+    display: block;
+    padding-block: 30px;
+    text-align: center;
+  }
+  .simple-steps-section .simple-steps-section-description-text-mobile h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333b46;
+    font-size: 18px;
+  }
+  .simple-steps-section .simple-steps-section-description-text-mobile p {
+    font-family: 'Open Sans', sans-serif;
+    color: #81868e;
+    width: 300px;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .simple-steps-section .simple-steps-section-description-text-mobile:nth-last-child(1) {
+    padding-bottom: 2px;
+  }
+  .featured-work-section {
+    padding-bottom: 65px;
+  }
+  .featured-work-section .featured-work-section-text {
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+  .featured-work-section .featured-work-section-text h3 {
+    font-size: 22.4px;
+  }
+  .featured-work-section .featured-work-section-text p {
+    width: 300px;
+    font-size: 12.5px;
+  }
+  .featured-work-images-section .featured-work-images-div-all .featured-work-images-div img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .best-service-section {
+    background-color: #ececec;
+  }
+  .best-service-section .best-service-section-text {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .best-service-section .best-service-section-text h3 {
+    font-size: 22.4px;
+  }
+  .best-service-section .best-service-section-text p {
+    width: 300px;
+    font-size: 12.5px;
+  }
+  .best-service-images-section {
+    padding-top: 80px;
+    padding-bottom: 25px;
+  }
+  .best-service-images-section .best-service-images-section-row img {
+    all: initial;
+    width: 300px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text {
+    padding-inline: 0px;
+    padding-block: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text h3 {
+    letter-spacing: 2px;
+  }
+  .best-service-images-section .best-service-images-section-row .best-service-images-section-text p {
+    font-size: 12.5px;
+    line-height: 25px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -120,4 +120,93 @@
         }
     }
 
+    .simple-steps-section{
+        .simple-steps-section-header-text{
+            p{
+                width: 550px;
+            }
+        }
+
+        .simple-steps-section-imgs-div{
+            img{
+                width: 100px;
+            }
+            .step-ico-line{
+                width: 180px;
+            }
+        }
+
+        .simple-steps-section-description-div{
+            gap: 30px;
+            .simple-steps-section-description-text{
+                width: 250px;
+                h3{
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                }
+                p{
+                    font-size: 13px;
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
+
+    .featured-work-section{
+
+        .featured-work-section-text{
+            
+            p{
+                width: 550px;
+            }
+        }
+    }
+
+    .featured-work-images-section{  
+        .featured-work-images-div-all{
+            .featured-work-images-div{
+                .overlay{
+                    padding: 60px 60px;
+                }
+                button{
+                    padding: 8px 9px;
+                }
+            }
+        }
+    }
+
+    .best-service-section{
+        .best-service-section-text{
+            p{
+                width: 550px;
+            }
+        }
+    }
+
+    .best-service-images-section{
+
+        .best-service-images-section-row{
+
+            img{
+                min-width: 390px;
+            }
+            
+            .best-service-images-section-text{
+                padding-inline: 60px;
+                padding-block: 30px;
+
+                h3{
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                }
+
+                p{
+                    font-size: 13px;
+                    margin-top: 16px;
+                }
+            }
+        }
+
+    }
+
 }

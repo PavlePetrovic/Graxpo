@@ -1,3 +1,4 @@
+@import "./variables";
 @media only screen and (max-width: 550px){
 
     header{
@@ -146,6 +147,119 @@
         .counter-box{
             width: 40%;
            
+        }
+    }
+
+    .simple-steps-section{
+        padding-bottom: 0px;
+        .simple-steps-section-header-text{
+            padding-top: 60px;
+            padding-bottom: 50px;
+            h3{
+                font-size: 22.4px;
+            }
+            p{
+                font-size: 12.5px;
+                width: 300px;
+            }
+        }
+        .simple-steps-section-imgs-div{
+            flex-direction: column;
+            .step-ico-line{
+                display: none;
+            }
+        }
+        .simple-steps-section-description-text{
+            display: none; 
+        }
+        .simple-steps-section-description-text-mobile{
+            display: block;
+            padding-block: 30px;
+            text-align: center;
+            h3{
+                font-family: 'Roboto', sans-serif;
+                color: $sectionTitleColor;
+                font-size: 18px;
+            }
+            p{
+                font-family: 'Open Sans', sans-serif;
+                color: $sectionTextColor;
+                width: 300px;
+                font-size: 11px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        .simple-steps-section-description-text-mobile:nth-last-child(1){
+            padding-bottom: 2px;
+        }
+    }
+
+    .featured-work-section{
+        padding-bottom: 65px;
+        .featured-work-section-text{
+            padding-top: 70px;
+            padding-bottom: 0px;
+            h3{
+                font-size: 22.4px;
+            }
+            p{
+                width: 300px;
+                font-size: 12.5px;
+            }
+        }
+    }
+
+    .featured-work-images-section{
+        .featured-work-images-div-all{
+            .featured-work-images-div{
+                img{
+                    max-width: 300px;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .best-service-section{
+        background-color: #ececec;
+        .best-service-section-text{
+            padding-top: 35px;
+            padding-bottom: 70px;
+            h3{
+                font-size: 22.4px;
+            }
+            p{
+                width: 300px;
+                font-size: 12.5px;
+            }
+        }
+    }
+
+    .best-service-images-section{
+        padding-top: 80px;
+        padding-bottom: 25px;
+        .best-service-images-section-row{
+            img{
+                all: initial;
+                width: 300px;
+            }
+            .best-service-images-section-text{
+                padding-inline: 0px;
+                padding-block: 50px;
+                align-items: center;
+                h3{
+                    letter-spacing: 2px;
+                }
+                p{
+                    font-size: 12.5px;
+                    line-height: 25px;
+                    width: 300px;
+                }
+    
+            }
         }
     }
 }
