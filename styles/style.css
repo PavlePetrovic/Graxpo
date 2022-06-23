@@ -570,7 +570,7 @@ header .mobileMenuItems {
   background-color: #ececec;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDiv {
+.featuredWorkImagesSection .featuredWorkImagesDivAll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,15 +579,54 @@ header .mobileMenuItems {
           justify-content: center;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDiv img {
+.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv .hide {
+  display: none;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv img {
   width: 100%;
   height: auto;
 }
 
-.featuredWorkImagesSection .featuredWorkImagesDiv img:hover {
-  opacity: 0.5;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv img:hover + .hide {
+  display: block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv img:hover {
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+  z-index: 5;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv .overlay {
+  background-color: #e84c3d;
+  padding: 100px 130px;
+}
+
+.featuredWorkImagesSection .featuredWorkImagesDivAll .featuredWorkImagesDiv button {
+  display: absolute;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px;
   cursor: pointer;
 }
 
@@ -632,6 +671,79 @@ header .mobileMenuItems {
   color: #81868e;
   width: 600px;
   text-align: center;
+}
+
+.bestServiceImagesSection {
+  background-color: #e84c3d;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bestServiceImagesSection .bestServiceImagesSectionRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #e84c3d;
+}
+
+.bestServiceImagesSection .bestServiceImagesSectionRow img {
+  max-width: 650px;
+}
+
+.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-inline: 130px;
+  padding-block: 50px;
+  color: white;
+}
+
+.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText h3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText span {
+  display: inline-block;
+  height: 2.3px;
+  width: 45px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.bestServiceImagesSection .bestServiceImagesSectionRow .bestServiceImagesSectionText p {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 30px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  max-width: 1000px;
+}
+
+.bestServiceImagesSection .bestServiceImagesSectionRow .middle {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .test {

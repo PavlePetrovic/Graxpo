@@ -499,16 +499,51 @@ header{
     margin-right: auto;
     background-color: #ececec;
 
-    .featuredWorkImagesDiv{
+    .featuredWorkImagesDivAll{
         display: flex;
         justify-content: center;
-        
-        img{
-            width: 100%;
-            height: auto;
-            &:hover{
-                opacity: 0.5;
-                transition: 0.2s;
+
+        .featuredWorkImagesDiv{
+            position: relative;
+            flex-grow: 1;
+
+            .hide{
+                display: none;
+            }
+    
+            img{
+                width: 100%;
+                height: auto;
+
+                &:hover + .hide{
+                    display: block;
+                    transition: .5s ease;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    opacity: 0.9;
+                }
+                &:hover{
+                    filter: grayscale(90%);
+                    z-index: 5;
+                }
+            }
+
+            .overlay{
+                background-color: $mainOrange;
+                padding: 100px 130px;
+            }
+
+            button{
+                display: absolute;
+                width: 120px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 10px;
+                padding: 10px 12px;
                 cursor: pointer;
             }
         }
@@ -547,6 +582,65 @@ header{
             width: 600px;
             text-align: center;
         }
+    }
+}
+
+// Best service images section
+
+.bestServiceImagesSection{
+    background-color: $mainOrange;
+    margin-right: auto;
+    margin-left: auto;
+
+    .bestServiceImagesSectionRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: $mainOrange;
+
+        img{
+            max-width: 650px;
+        }
+
+        .bestServiceImagesSectionText{
+            display: flex;
+            flex-direction: column;
+            padding-inline: 130px;
+            padding-block: 50px;
+            color: white;
+
+            h3{
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+            }
+
+            span{
+                display: inline-block;
+                height: 2.3px;
+                width: 45px;
+                margin-bottom: 10px;
+                background-color: white;
+                border-radius: 2px; 
+            }
+
+            p{
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 0.5px;
+                font-size: 15px;
+                font-weight: lighter;
+                line-height: 30px;
+                margin-top: 20px;
+                letter-spacing: 1px;
+                max-width: 1000px;
+            }
+
+        }
+    }
+
+    .bestServiceImagesSectionRow .middle{
+        flex-direction: row-reverse;
     }
 }
 
