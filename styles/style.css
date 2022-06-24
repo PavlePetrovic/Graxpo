@@ -590,46 +590,35 @@ header .mobile-menu-items {
           flex-grow: 1;
 }
 
-.featured-work-images-section .featured-work-images-div-all .featured-work-images-div .hide {
-  display: none;
-}
-
 .featured-work-images-section .featured-work-images-div-all .featured-work-images-div img {
   width: 100%;
   height: auto;
 }
 
-.featured-work-images-section .featured-work-images-div-all .featured-work-images-div img:hover + .hide {
-  display: block;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div:hover .hide {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   opacity: 0.9;
-}
-
-.featured-work-images-section .featured-work-images-div-all .featured-work-images-div img:hover {
-  -webkit-filter: grayscale(90%);
-          filter: grayscale(90%);
-}
-
-.featured-work-images-section .featured-work-images-div-all .featured-work-images-div .overlay {
+  padding: 120px 150px;
   background-color: #e84c3d;
-  padding: 80px 90px;
+  margin-top: -22px;
 }
 
-.featured-work-images-section .featured-work-images-div-all .featured-work-images-div button {
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div .hide {
+  opacity: 0;
+}
+
+.featured-work-images-section .featured-work-images-div-all .featured-work-images-div .hide button {
   display: absolute;
   width: 120px;
   background-color: transparent;
   border: 1px solid white;
   color: white;
   border-radius: 10px;
-  padding: 10px 12px;
+  padding: 10px 16px;
   cursor: pointer;
 }
 
@@ -747,6 +736,298 @@ header .mobile-menu-items {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.business-ideas-section {
+  background-image: url("../img/business.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.business-ideas-section h1 {
+  font-weight: 300;
+  font-size: 35px;
+  letter-spacing: 4.5px;
+}
+
+.business-ideas-section h3 {
+  font-weight: 300;
+  font-size: 21.33px;
+  letter-spacing: 4px;
+  padding-block: 22px;
+}
+
+.business-ideas-section button {
+  font-weight: 300;
+  background-color: #e84c3d;
+  padding: 13px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 18px;
+}
+
+.business-ideas-section button:hover {
+  background-color: rgba(255, 255, 255, 0.767);
+  color: #e84c3d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.portfolio-section {
+  background-color: #ececec;
+}
+
+.portfolio-section .portfolio-section-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+.portfolio-section .portfolio-section-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #333b46;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.portfolio-section .portfolio-section-text span {
+  display: inline-block;
+  height: 2.3px;
+  width: 45px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.portfolio-section .portfolio-section-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15.4px;
+  color: #81868e;
+  width: 600px;
+  text-align: center;
+}
+
+.categories-section {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ececec;
+  color: #333b46;
+  padding-block: 80px;
+}
+
+.categories-section p:hover {
+  cursor: pointer;
+}
+
+.categories-section span {
+  padding-inline: 20px;
+  color: #333b46;
+}
+
+.gallery-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1800px;
+}
+
+.gallery-section .gallery-section-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.gallery-section .gallery-section-row img {
+  width: 100%;
+  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.gallery-section .gallery-section-row img:hover {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+.gallery-section .gallery-section-row .gallery-section-row-colum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-section .gallery-section-row .gallery-section-row-colum img {
+  width: 100%;
+  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.subscribe-section {
+  background-image: url("../img/subscribe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 70px;
+}
+
+.subscribe-section .subscribe-section-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  color: white;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+
+.subscribe-section .subscribe-section-text span {
+  display: inline-block;
+  height: 2px;
+  width: 80px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.subscribe-section .subscribe-section-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  width: 500px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.subscribe-section .subscribe-section-form {
+  position: relative;
+}
+
+.subscribe-section .subscribe-section-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.subscribe-section .subscribe-section-form form input[type=email] {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 350px;
+  padding-left: 25px;
+  color: white;
+  outline: none;
+}
+
+.subscribe-section .subscribe-section-form form input[type=email]::-webkit-input-placeholder {
+  padding: 15px;
+}
+
+.subscribe-section .subscribe-section-form form input[type=email]:-ms-input-placeholder {
+  padding: 15px;
+}
+
+.subscribe-section .subscribe-section-form form input[type=email]::-ms-input-placeholder {
+  padding: 15px;
+}
+
+.subscribe-section .subscribe-section-form form input[type=email]::placeholder {
+  padding: 15px;
+}
+
+.subscribe-section .subscribe-section-form form input[type=button] {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 40px;
+}
+
+.subscribe-section .subscribe-section-form form input[type=button]:hover {
+  background-color: white;
+  color: #e84c3d;
+  cursor: pointer;
+}
+
+.subscribe-section .subscribe-section-form form #snackbar {
+  visibility: hidden;
+  font-size: 12.33px;
+  min-width: 180px;
+  margin-left: -125px;
+  /* Divide value of min-width by 2 */
+  background-color: white;
+  color: #e84c3d;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  left: 125px;
+  top: 60px;
+  opacity: 0;
+}
+
+.subscribe-section .subscribe-section-form form #snackbar.show {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .test {

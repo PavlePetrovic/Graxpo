@@ -510,44 +510,39 @@ header{
             position: relative;
             flex-grow: 1;
 
-            .hide{
-                display: none;
-            }
-    
             img{
                 width: 100%;
                 height: auto;
+            }
 
-                &:hover + .hide{
-                    display: block;
-                    transition: .5s ease;
+            &:hover{
+
+                .hide{
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
                     opacity: 0.9;
-                }
-                &:hover{
-                    filter: grayscale(90%);
+                    padding: 120px 150px;
+                    background-color: $mainOrange;
+                    margin-top: -22px;
                 }
             }
 
-            .overlay{
-                background-color: $mainOrange;
-                padding: 80px 90px;
-            }
+            .hide{
+                opacity: 0;
 
-            button{
-                display: absolute;
-                width: 120px;
-                background-color: transparent;
-                border: 1px solid white;
-                color: white;
-                border-radius: 10px;
-                padding: 10px 12px;
-                cursor: pointer;
-            }
+                button{
+                    display: absolute;
+                    width: 120px;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    color: white;
+                    border-radius: 10px;
+                    padding: 10px 16px;
+                    cursor: pointer;
+                }
+            }  
         }
     }
 }
@@ -643,6 +638,245 @@ header{
 
     .best-service-images-section-row .middle{
         flex-direction: row-reverse;
+    }
+}
+
+// Business ideas section
+.business-ideas-section{
+    background-image: url("../img/business.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    
+    h1{
+        font-weight: 300;
+        font-size: 35px;
+        letter-spacing: 4.5px;
+    }
+    
+    h3{
+        font-weight: 300;
+        font-size: 21.33px;
+        letter-spacing: 4px;
+        padding-block: 22px;
+    }
+
+    button{
+        font-weight: 300;
+        background-color: $mainOrange;
+        padding: 13px 15px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        margin-top: 18px;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.767);
+            color: $mainOrange;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
+}
+
+// Portfolio section
+.portfolio-section{
+    background-color: #ececec;
+
+    .portfolio-section-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 0px;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: $sectionTitle;
+            color: $sectionTitleColor;
+            letter-spacing: $sectionTitleLetterSpacing;
+            margin-bottom: 18px;
+        }
+
+        span{
+                display: inline-block;
+                height: 2.3px;
+                width: 45px;
+                margin-bottom: 10px;
+                background-color: white;
+                border-radius: 2px; 
+            }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: $sectionText;
+            color: $sectionTextColor;
+            width: 600px;
+            text-align: center;
+        }
+    }
+}
+
+// Categories section
+.categories-section{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    color: $sectionTitleColor;
+    padding-block: 80px;
+
+    p{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    span{
+        padding-inline: 20px;
+        color: $sectionTitleColor;
+    }
+}
+
+// Gallery section
+.gallery-section{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    max-width: 1800px;
+
+    .gallery-section-row{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        
+        img{
+            width: 100%;
+            height: auto;
+            flex-grow: 1;
+
+            &:hover{
+                filter: opacity(50%);
+            }
+        }
+
+        .gallery-section-row-colum{
+            display: flex;
+
+            img{
+                width: 100%;
+                height: auto;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+// Subscribe section
+.subscribe-section{
+    background-image: url("../img/subscribe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    .subscribe-section-text{
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: 23px;
+            color: white;
+            letter-spacing: $sectionTitleLetterSpacing;
+            margin-bottom: 18px;
+            font-weight: 300;
+        }
+
+        span{
+            display: inline-block;
+            height: 2px;
+            width: 80px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 2px; 
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: white;
+            width: 500px;
+            font-weight: 300;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+    }
+
+    .subscribe-section-form{
+        position: relative;
+
+        form{
+            display: flex;
+            font-family: 'Open Sans', sans-serif;
+
+            input[type=email]{
+                background-color: transparent;
+                border: 1px solid white;
+                width: 350px;
+                padding-left: 25px;
+                color: white;
+                &::placeholder{
+                    padding: 15px;
+                }
+                outline: none;
+            }
+
+            input[type=button]{
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                padding: 15px 40px;
+                &:hover{
+                    background-color: white;
+                    color: $mainOrange;
+                    cursor: pointer;
+                }
+            }
+
+            // Snackbar - Toast message
+
+            #snackbar {
+                visibility: hidden;
+                font-size: 12.33px;
+                min-width: 180px;
+                margin-left: -125px; /* Divide value of min-width by 2 */
+                background-color: white;
+                color: $mainOrange;
+                text-align: center;
+                padding: 10px;
+                position: absolute;
+                left: 125px;
+                top: 60px;
+                opacity: 0;
+            }
+
+            #snackbar.show {
+                visibility: visible;
+                opacity: 1;
+                transition: 0.2s;
+            }
+
+        }
     }
 }
 

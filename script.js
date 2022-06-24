@@ -16,7 +16,12 @@ window.onload = function() {
     let num2 = document.getElementById('number-2')
     let num3 = document.getElementById('number-3')
     let num4 = document.getElementById('number-4') 
-
+    // Form 
+    let form = document.querySelector('form')
+    let formEmail = document.querySelector('input[type="email"]')
+    let formButton = document.querySelector('input[type="button"]')
+    let snackbar = document.getElementById("snackbar");
+    
     /*                  MOBILE MENU                 */
     // Hamburger icon
     hamburgerIcon.addEventListener('click', () => {
@@ -100,6 +105,47 @@ window.onload = function() {
     window.onload = counter(num3)
     window.onload = counter(num4)
 
+
+    /*                   FORM                   */
+
+
+    form.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        if( e.target.type === 'button' ) {
+            snackbar.className = "show"
+            if(formEmail.value.length < 1){
+                snackbar.innerText = 'Enter email address'
+                formButton.disabled = true
+            } else {
+                validateEmail(formEmail, snackbar)
+                formButton.disabled = false
+            }
+            setTimeout( function(){  
+                snackbar.className = snackbar.className.replace("show", ""); 
+            }, 3000);
+        }
+
+        function validateEmail(input, snack) {
+            let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            
+            if( input.value.match(validRegex) ) {
+                snack.innerText = 'Successful subscription'
+            } else {
+                snack.innerText = 'Invalid email address'
+            }  
+
+            /*
+            The personal information part can contain the following ASCII characters:
+             - Uppercase and lowercase letters (A-Z and a-z)
+             - Numeric characters (0-9)
+             - Special characters - ! # $ % & ' * + - / = ? ^ _ ` { | } ~
+             - Period, dot, or full stop (.) with the condition that it cannot be the first or last letter of the email and cannot repeat one after another.
+            */
+          }
+
+        formButton.disabled = false
+    })
 }
 
 
