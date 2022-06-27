@@ -1365,11 +1365,7 @@ header{
     }
 }
 
-.test{
-    height: 600px;
-    background-color: #cfcfcf;
-}
-
+// Slider section
 .slider-section{
     background-image: url("../img/sliderBackground.png");
     background-size: cover;
@@ -1482,6 +1478,121 @@ header{
         }
     }
 }
+
+// Blog section
+.blog-section{
+    background-color: #ececec;
+
+    .blog-section-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 70px;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: $sectionTitle;
+            color: $sectionTitleColor;
+            letter-spacing: $sectionTitleLetterSpacing;
+            margin-bottom: 18px;
+        }
+
+        hr{
+            width: 50px;
+            @include hrLine;
+            margin-bottom: 35px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: $sectionText;
+            color: $sectionTextColor;
+            width: 600px;
+            text-align: center;
+        }
+    }
+
+    .blog-section-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 70px;
+
+        .img-1, .img-2{
+            width: 501px;
+            height: 343px;
+        }
+
+        .img-1{
+            background-image: url("../img/blog1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img-2{
+            background-image: url("../img/blog2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img-blog-text{
+            width: 50%;
+            height: 100%;
+            background-color: $mainOrange;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            float: right;
+            padding-inline: 20px;
+
+            h4{
+                font-family: 'Roboto', sans-serif;
+                padding-bottom: 3px;
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+
+            h5{
+                font-family: 'Roboto', sans-serif;
+                padding-bottom: 14px;
+                font-weight: 300;
+                letter-spacing: 1.5px;
+            }
+            
+            span{
+                width: 35px;
+                height: 2px;
+                background-color: white;
+                border-radius: 10px;
+                margin-bottom: 22px;
+            }
+
+            p{
+                font-family: 'Open Sans', sans-serif;
+                padding-bottom: 20px;
+                font-size: 11px;
+                letter-spacing: 1.2px;
+            }
+
+            .date{
+                font-family: 'Open Sans', sans-serif;
+
+                i{
+                    padding-right: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.test{
+    height: 600px;
+    background-color: #cfcfcf;
+}
+
 
 // MEDIA QUERIES
 @import "./media1100.scss";
