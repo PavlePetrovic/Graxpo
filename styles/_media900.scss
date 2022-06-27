@@ -315,4 +315,44 @@
                 flex-direction: column-reverse ; 
         }
     }
+
+    .business-ideas-section{
+        h1{
+            font-size: 25px;
+            text-align: center;
+            width: 500px;
+        }   
+        h3{
+            font-size: 18px;
+        }
+        button{
+            padding: 11px 12px;
+        }
+    }
+
+    .portfolio-section{
+        .portfolio-section-text{
+            padding-top: 70px;
+            padding-bottom: 0px;
+            p{
+                width: 450px;
+                font-size: 14.4px;
+            }
+        }
+    }
+
+    .categories-section{
+        span{
+            padding-inline: 18px;
+        }
+    }
+
+    .crew-section{
+        .crew-text-section{
+            p{
+                width: 450px;
+                font-size: 14.4px;
+            }
+        }
+    }
 }

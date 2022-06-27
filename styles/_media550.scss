@@ -262,4 +262,92 @@
             }
         }
     }
+
+    .business-ideas-section{
+        h1{
+            font-size: 22px;
+            text-align: center;
+            width: 360px;
+        }   
+        h3{
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        button{
+            padding: 11px 12px;
+            font-size: 11px;
+        }
+    }
+
+    .portfolio-section{
+        .portfolio-section-text{
+            padding-top: 70px;
+            padding-bottom: 0px;
+            h3{
+                font-size: 22.4px;
+            }
+            p{
+                font-size: 12.5px;
+                width: 300px;
+            }   
+        }
+    }
+
+    .categories-section{
+        P{
+            font-size: 14px;
+        }
+        span{
+            padding-inline: 6px;
+        }
+    }
+
+    .subscribe-section{
+        flex-direction: column;
+        gap: 30px;
+        .subscribe-section-text{
+            span{
+                width: 70px;
+            }
+            p{
+                font-size: 13px;
+                width: 350px;
+                line-height: 28px;
+            }
+        }
+        .subscribe-section-form{
+            form{
+                input[type="email"]{
+                    width: 230px;
+                    padding-left: 15px;
+                    &::placeholder{
+                        padding: 8px;
+                    }
+                }
+                input[type="button"]{
+                   padding: 8px 20px;
+                }
+                #snackbar{
+                    font-size: 10px;
+                    min-width: 130px;
+                    margin-left: -65px;
+                    left: 65px;
+                    top: 45px;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+
+    .crew-section{
+        .crew-text-section{
+            h3{
+                font-size: 22.4px;
+            }
+            p{
+                width: 300px;
+                font-size: 12.5px;
+            }
+        }
+    }
 }

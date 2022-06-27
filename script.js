@@ -3,7 +3,7 @@ import { CountUp } from './counterJs/dist/countUp.min.js';
 
 window.onload = function() {
 
-    /*                     DOM                  */
+    // DOM:
     // Mobile menu
     let body = document.querySelector('body')
     let hamburgerIcon = document.querySelector('.mobile-menu-div')
@@ -21,6 +21,12 @@ window.onload = function() {
     let formEmail = document.querySelector('input[type="email"]')
     let formButton = document.querySelector('input[type="button"]')
     let snackbar = document.getElementById("snackbar");
+     // Slider
+     let prev = document.querySelector('.prev')
+     let next = document.querySelector('.next')
+     let sliderDot1 = document.getElementById('dot-1')
+     let sliderDot2 = document.getElementById('dot-2')
+     let sliderDot3 = document.getElementById('dot-3')
     
     /*                  MOBILE MENU                 */
     // Hamburger icon
@@ -105,10 +111,7 @@ window.onload = function() {
     window.onload = counter(num3)
     window.onload = counter(num4)
 
-
     /*                   FORM                   */
-
-
     form.addEventListener('click', (e) => {
         e.preventDefault()
 
@@ -146,6 +149,55 @@ window.onload = function() {
 
         formButton.disabled = false
     })
+
+    /*                   SLIDER                   */
+    prev.addEventListener('click', () => {
+        plusSlides(-1)
+    })
+    next.addEventListener('click', () => {
+        plusSlides(1)
+    })
+    sliderDot1.addEventListener('click', () => {
+        currentSlide(1)
+    })
+    sliderDot2.addEventListener('click', () => {
+        currentSlide(2)
+    })
+    sliderDot3.addEventListener('click', () => {
+        currentSlide(3)
+    })
+
+    let slideIndex = 1
+    showSlides(slideIndex)
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n)
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n)
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slider-section-div");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "flex";
+        dots[slideIndex-1].className += " active";
+    }
+
 }
 
 
