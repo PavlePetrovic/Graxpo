@@ -1858,7 +1858,6 @@ header .mobile-menu-items {
 .pricing-table-section .table-div {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  padding-bottom: 70px;
 }
 
 .pricing-table-section .table-div table {
@@ -1906,9 +1905,196 @@ header .mobile-menu-items {
   cursor: pointer;
 }
 
+.get-in-touch-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 70px;
+}
+
+.get-in-touch-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #333b46;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.get-in-touch-section hr {
+  width: 50px;
+  width: 50px;
+  height: 3px;
+  background-color: #898989;
+  border-radius: 2px;
+  margin-bottom: 35px;
+}
+
+.get-in-touch-section p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15.4px;
+  color: #81868e;
+  width: 600px;
+  text-align: center;
+}
+
+.get-in-touch-form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 70px;
+  padding-bottom: 70px;
+}
+
+.get-in-touch-form-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.get-in-touch-form-section form div {
+  margin-bottom: 20px;
+}
+
+.get-in-touch-form-section form div input[type="text"] {
+  margin-right: 15px;
+  width: 240px;
+  padding: 10px;
+  border: 1px solid  #cfcfcf;
+  outline: none;
+  background-color: transparent;
+}
+
+.get-in-touch-form-section form div input[type="text"]::-webkit-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form div input[type="text"]:-ms-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form div input[type="text"]::-ms-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form div input[type="text"]::placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form div input[type="email"] {
+  width: 240px;
+  padding: 10px;
+  border: 1px solid  #cfcfcf;
+  outline: none;
+  background-color: transparent;
+}
+
+.get-in-touch-form-section form div input[type="email"]::-webkit-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form div input[type="email"]:-ms-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form div input[type="email"]::-ms-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form div input[type="email"]::placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form textarea {
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid  #cfcfcf;
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+  resize: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 200px;
+}
+
+.get-in-touch-form-section form textarea::-webkit-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form textarea:-ms-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form textarea::-ms-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form textarea::placeholder {
+  letter-spacing: 1px;
+}
+
+.get-in-touch-form-section form input[type="button"] {
+  margin-top: 20px;
+  width: 240px;
+  background-color: #e84c3d;
+  color: white;
+  padding-block: 10px;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.get-in-touch-form-section form input[type="button"]:hover {
+  cursor: pointer;
+  background-color: #333b46;
+}
+
+.get-in-touch-form-section .info-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.get-in-touch-form-section .info-div table i {
+  font-size: 28px;
+  color: #e84c3d;
+  padding-block: 12px;
+}
+
+.get-in-touch-form-section .info-div table p {
+  width: 250px;
+  color: #81868e;
+  padding-left: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
 .test {
-  height: 600px;
-  background-color: #cfcfcf;
+  height: 100px;
+  background-color: #e84c3d;
 }
 
 @media only screen and (max-width: 1100px) {

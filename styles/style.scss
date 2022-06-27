@@ -1627,7 +1627,6 @@ header{
     .table-div{
         font-family: 'Open Sans', sans-serif;
         text-align: center;
-        padding-bottom: 70px;
 
         table { 
             border: 1px solid  #cfcfcf;
@@ -1685,9 +1684,135 @@ header{
     }
 }
 
+// Get in touch section
+.get-in-touch-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 70px;
+
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: $sectionTitle;
+        color: $sectionTitleColor;
+        letter-spacing: $sectionTitleLetterSpacing;
+        margin-bottom: 18px;
+    }
+
+    hr{
+        width: 50px;
+        @include hrLine;
+        margin-bottom: 35px;
+    }
+
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: $sectionText;
+        color: $sectionTextColor;
+        width: 600px;
+        text-align: center;
+    }
+}
+
+// Get in touch form section
+.get-in-touch-form-section{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-bottom: 70px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        font-family: 'Open Sans', sans-serif;
+
+        div{
+            margin-bottom: 20px;
+
+            input[type="text"]{
+                margin-right: 15px;
+                width: 240px;
+                padding: 10px;
+                border: 1px solid  #cfcfcf;
+                outline: none;
+                background-color: transparent;
+                &::placeholder{
+                    letter-spacing: 1px;
+                }
+            }
+            input[type="email"]{
+                width: 240px;
+                padding: 10px;
+                border: 1px solid  #cfcfcf;
+                outline: none;
+                background-color: transparent;
+                &::placeholder{
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        textarea{
+            font-family: 'Open Sans', sans-serif;
+            border: 1px solid  #cfcfcf;
+            outline: none;
+            font-size: 14px;
+            background-color: transparent;
+            resize: none;
+            padding-top: 10px;
+            padding-left: 10px;
+            height: 200px;
+            &::placeholder{
+                letter-spacing: 1px;
+            }
+        }
+        
+        input[type="button"]{
+            margin-top: 20px;
+            width: 240px;
+            background-color: $mainOrange;
+            color: white;
+            padding-block: 10px;
+            border: none;
+            outline: none;
+            font-weight: 300;
+            font-size: 12px;
+            &:hover{
+                cursor: pointer;
+                background-color: #333b46;
+            }
+        }
+    }
+
+    .info-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+
+        table{
+
+            i{
+                font-size: 28px;
+                color: $mainOrange;
+                padding-block: 12px;
+            }
+
+            p{
+                width: 250px;
+                color: #81868e;
+                padding-left: 20px;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
 .test{
-    height: 600px;
-    background-color: #cfcfcf;
+    height: 100px;
+    background-color: $mainOrange;
 }
 
 
