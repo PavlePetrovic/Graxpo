@@ -16,17 +16,25 @@ window.onload = function() {
     let num2 = document.getElementById('number-2')
     let num3 = document.getElementById('number-3')
     let num4 = document.getElementById('number-4') 
-    // Form 
+    // Form Subsciption
     let form = document.querySelector('form')
     let formEmail = document.querySelector('input[type="email"]')
     let formButton = document.querySelector('input[type="button"]')
     let snackbar = document.getElementById("snackbar");
      // Slider
-     let prev = document.querySelector('.prev')
-     let next = document.querySelector('.next')
-     let sliderDot1 = document.getElementById('dot-1')
-     let sliderDot2 = document.getElementById('dot-2')
-     let sliderDot3 = document.getElementById('dot-3')
+    let prev = document.querySelector('.prev')
+    let next = document.querySelector('.next')
+    let sliderDot1 = document.getElementById('dot-1')
+    let sliderDot2 = document.getElementById('dot-2')
+    let sliderDot3 = document.getElementById('dot-3')
+    // Pricing table
+    let tables = document.querySelectorAll('.table-div table')
+    // Form Message
+    let msgUsername = document.getElementById('msg-username')
+    let msgEmail = document.getElementById('msg-email')
+    let msgText = document.getElementById('msg-text')
+    let msgBtn = document.getElementById('msg-btn')
+    let msgSnackbar = document.getElementById('msg-snackbar')
     
     /*                  MOBILE MENU                 */
     // Hamburger icon
@@ -111,7 +119,7 @@ window.onload = function() {
     window.onload = counter(num3)
     window.onload = counter(num4)
 
-    /*                   FORM                   */
+    /*                   FORM SUBCRIPTION                   */
     form.addEventListener('click', (e) => {
         e.preventDefault()
 
@@ -173,7 +181,6 @@ window.onload = function() {
     function plusSlides(n) {
         showSlides(slideIndex += n)
     }
-
     function currentSlide(n) {
         showSlides(slideIndex = n)
     }
@@ -198,6 +205,68 @@ window.onload = function() {
         dots[slideIndex-1].className += " active";
     }
 
+    /*                   PRICING TABLE                   */
+    tables.forEach( table => {
+        let x = -1
+        table.addEventListener('click', (e) => {
+            let allTableDivs = table.parentElement.parentElement.children
+    
+            for( let i = 0; i < allTableDivs.length; i++ ){
+                let allTables = allTableDivs[i]
+                allTables.children[0].classList.remove('active-table')
+            }
+
+            x++
+            if( x % 2 == 0 ){
+                if( x % 2 == 0){
+                    table.classList.add('active-table')
+                } else {
+                    table.classList.remove('active-table')
+                }
+            } else{
+                if( x % 2 == 0){
+                    table.classList.add('active-table')
+                } else {
+                    table.classList.remove('active-table')
+                }
+            }
+
+            console.log(x);
+        })
+    })
+
+    /*                   FORM MESSAGE                   */
+    msgBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        let msgUsernameValue = msgUsername.value
+        let msgTextValue = msgText.value
+        let msgEmailValue = msgEmail.value
+        
+        msgSnackbar.className = "show"
+        
+        if( msgUsernameValue < 1 || msgTextValue < 1 || msgEmailValue < 1){
+            msgSnackbar.innerText = 'Please fill in all fields'
+        } else(
+            validateEmail(msgEmail, msgSnackbar)
+        )
+
+        setTimeout( function(){  
+            msgSnackbar.className = msgSnackbar.className.replace("show", ""); 
+        }, 3000);
+
+        function validateEmail(input, snack) {
+            let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            
+            if( input.value.match(validRegex) ) {
+                snack.innerText = 'Successful subscription'
+            } else {
+                snack.innerText = 'Invalid email address'
+            }  
+        }
+    })
+
+    
 }
 
 

@@ -634,7 +634,7 @@
     <!-- Pricing table section -->
     <section class="pricing-table-section">
         <div class="table-div">
-            <table>
+        <table>
                 <tr>
                     <td>BASIC</td>
                 </tr>
@@ -748,11 +748,12 @@
     <section class="get-in-touch-form-section">
         <form>
             <div>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Your Name" id="msg-username">
+                <input type="email" placeholder="Email Address" id="msg-email">
             </div>
-            <textarea placeholder="Message"></textarea>
-            <input type="button" value="SUBMIT NOW">
+            <textarea placeholder="Message" id="msg-text"></textarea>
+            <input type="button" value="SUBMIT NOW" id="msg-btn">
+            <div id="msg-snackbar"></div>
         </form>
 
         <div class="info-div">
@@ -774,7 +775,9 @@
     </section>
     <!--  -->
 
-    <div class="test"></div>
+    <footer>
+        <p>Copyright Redwan. All Rights Reserved</p>
+    </footer>
 
     <script src="script.js" type="module"></script>
     <script src="./counterJs/dist/countUp.min.js" type="module"></script>

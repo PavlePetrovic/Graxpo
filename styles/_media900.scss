@@ -243,20 +243,10 @@
                     width: 100%;
                     height: auto;
                     margin-bottom: 30px;
-    
-                    &:hover + .hide{
-                        display: none;
-                    }
-                    &:hover{
-                        filter: none;
-                    }
+                    padding-bottom: 6px;
                 }
-    
-                .overlay{
-                    display: none;
-                }
-    
-                button{
+
+                .hide{
                     display: none;
                 }
             }
@@ -316,6 +306,213 @@
         }
     }
 
+    .gallery-section{
+        .gallery-section-row{ 
+            div{
+                .img-overlay{
+                    .img-1{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-2{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-3{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-4{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-5{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-6{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-7{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-8{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-11{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                    .img-12{
+                        h3, p, span{
+                            left: 15px;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        p{
+                            bottom: 25px;
+                            font-size: 12px;
+                        }
+                        span{
+                            width: 40px;
+                            bottom: 15px;
+                        }
+                    }
+                }
+            }
+            .gallery-section-row-colum{
+                div{
+                    .img-overlay{
+                        .img-9{
+                            h3, p, span{
+                                left: 10px;
+                            }
+                            h3{
+                                display: none;
+                            }
+                            p{
+                                bottom: 25px;
+                                font-size: 8px;
+                            }
+                            span{
+                                width: 25px;
+                                bottom: 15px;
+                            }
+                        }
+                        .img-10{
+                            h3, p, span{
+                                left: 10px;
+                            }
+                            h3{
+                                display: none;
+                            }
+                            p{
+                                bottom: 25px;
+                                font-size: 8px;
+                            }
+                            span{
+                                width: 25px;
+                                bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .business-ideas-section{
         h1{
             font-size: 25px;
@@ -342,6 +539,7 @@
     }
 
     .categories-section{
+        padding-block: 50px;
         span{
             padding-inline: 18px;
         }
@@ -352,6 +550,124 @@
             p{
                 width: 450px;
                 font-size: 14.4px;
+            }
+        }
+    }
+    
+    .crew-image-section{
+        .crew-all-images-div{
+            flex-direction: column;
+            .crew-image-box{    
+                .crew-img-overlay{
+                    height: 40%;
+                    width: 70%;
+                    margin-top: -12px;
+                    p{
+                        font-size: 10px;
+                        letter-spacing: 1.2px;
+                        line-height: 16px;
+                        top: 10px;
+                    }   
+                    i{
+                        font-size: 11px;
+                    }   
+                    i:nth-child(2){
+                        padding: 6.2px 9px;
+                    }
+                    i:nth-child(3){
+                        padding: 6.5px 8px;
+                    }
+                }
+                img{
+                    width: 80%;
+                }
+                h3{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .slider-section{
+        .slider-section-div{
+            h4, h3, h2, p, img{
+                padding-block: 17px;
+            }
+            h4{
+                font-size: 17px;
+            }
+            span{
+                width: 40px;
+            }
+            h3{
+                font-size: 19px;
+            }
+            img{
+                width: 140px;
+            }
+            p{
+                max-width: 500px;
+                padding-inline: 8px;
+            }
+            h2{
+                font-size: 20px;
+            }  
+        }
+        .prev, .next{
+            width: 150px;
+        }
+    }
+
+    .blog-section{
+        .blog-section-text{
+            p{
+                width: 450px;
+                text-align: center;
+                font-size: 14.4px;
+            }
+        }
+        .blog-section-img{
+            flex-direction: column;
+        }
+    }
+
+    .pricing-section{
+        p{
+            width: 450px;
+            text-align: center;
+            font-size: 14.4px;
+        }
+    }
+
+    .pricing-table-section{
+        flex-direction: column;
+    }
+
+    .get-in-touch-section{
+        p{
+            width: 450px;
+            text-align: center;
+            font-size: 14.4px;
+        }
+    }
+
+    .get-in-touch-form-section{
+        flex-direction: column;
+        align-items: center;
+        form{
+            input[type="button"]{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .info-div{
+            table{
+                p{
+                    text-align: center;
+                }
             }
         }
     }
