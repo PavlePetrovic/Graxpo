@@ -10,7 +10,7 @@ Take a look: [Graxpo site](https://graxpo-site.netlify.app/)
 
 ## General info
 
-Graxpo site is full responsive site with some functionalities. I build it for practice from scratch. In this project I use external lightweight javascript library for counter section. Also, I have build mobile menu animation, hover animation for some sections, image-reviews slider section and validation for all forms.
+Graxpo site is full responsive site with some functionalities. I build it for practice from scratch. In this project I use external lightweight javascript library for counter section. Also, I have build mobile menu animation, hover animation for some sections, image-reviews slider section and validation for all forms
 
 ## Technologies
 
